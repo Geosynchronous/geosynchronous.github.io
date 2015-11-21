@@ -1,0 +1,320 @@
+
+/*
+ *
+ * RESPONSIVE.CSS
+ *    Style for responsive layout.
+ *
+ */
+
+
+/*
+ *
+ * Featured Work Responsive Grid
+ *
+ */
+
+.fw_grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.header__menu {
+  display: none;
+}
+
+/*
+ *
+ * EXTRA LARGE VIEW
+ *  freezes layout above 960px
+ *  displayed width fixed
+ *  margins flexible
+ *
+ */
+
+@media screen and (min-width: 960px) {
+
+body {
+    width: 960px;
+    margin: 0 auto;
+  }
+}
+
+/*
+ *
+ * LARGE VIEW
+ *  re-organizes featured work
+ *  responds to changing viewport
+ *
+ */
+
+@media screen and (max-width: 959px) {
+
+
+ 	.fw_grid {
+ 	 	justify-content: space-around;
+  }
+}
+
+@media screen and (max-width: 934px) {
+  .fw_banner {
+    text-align: center;
+  }
+}
+
+/*
+ *
+ * MEDIUM VIEW
+ *  layout scheme portrait-like width friendly
+ *
+ */
+
+@media screen and (max-width: 650px) {
+
+	body {
+    padding: 0;
+  }
+
+  .header {
+    padding-top: 0px;
+  }
+
+ 	.header_myname {
+ 		font-size: 2.0em;
+  }
+
+  .header_title {
+    margin: 0.75em 5em 0.75em 0.25em;
+  }
+
+ 	.header_subtitle {
+  	font-size: 0.9em;
+ 	}
+
+ 	.header_logo {
+		height: 5em;
+		margin: 0.4em;
+	}
+
+  .nav__item {
+    display: list-item;
+    border-bottom: 1px solid #E0E0E0;
+    width: 100%;
+    text-align: center;
+    padding:20px 0 20px 0;
+  }
+
+  .header__menu {
+    display: inline-block;
+    position: absolute;
+    right: 0;
+    padding: 1em;
+  }
+
+  .header__menu svg {
+    width: 45px;
+    fill: #e0e0e0;
+  }
+
+  hr {
+      display: none;
+  }
+
+  /*
+   *  Nav code adapted from lesson 5 Solution/
+   */
+
+  .nav {
+    z-index: 10;
+    background-color: #000000;
+    bottom-margin: 200px;
+    width: 300px;
+    position: absolute;
+    /* This trasform moves the drawer off canvas. */
+    -webkit-transform: translate(-300px, 0);
+    transform: translate(-300px, 0);
+    /* Optionally, we animate the drawer. */
+    transition: transform 0.3s ease;
+  }
+
+  .nav a {
+    color: #ffffff;
+  }
+
+  .nav a:hover {
+    color: ;
+    text-decoration: none;
+  }
+
+  .nav.open {
+    -webkit-transform: translate(0, 0);
+    transform: translate(0, 0);
+  }
+
+  .hero {
+    min-height: 300px;
+    background-image: url("images/medium_antelope_island.jpg");
+  }
+
+  .featuredwork {
+    background-color: #ffdbb8;
+    padding-bottom: 15px;
+  }
+
+  .fw_container {
+    width: 100%;
+    text-align: left;
+    padding: 0 10px 0;
+    transition-duration: 2s;
+  }
+
+    article.description {
+    font-size: 16px;
+  }
+
+	.fw_banner {
+		font-size: 1.7em;
+    color: #747704;
+    text-align: center;
+  }
+
+  .fw_health {
+    background-color: #4d5c79;
+  }
+
+  .fw_sashimi {
+    background-color: #ab7b61;
+  }
+
+  .fw_non-profit {
+    background-color: #7f7c86;
+  }
+
+    /* Move text inline with image and center */
+
+  h5.fw_title {
+      display: inline-block;
+      vertical-align: top;
+      margin: 4.5em 0.75em 0 0;
+  }
+
+  .fw_image {
+    border: 3px solid #747707;
+    width: 200px;
+    height: 133px;
+    margin: 15px;
+  }
+
+	.fw_title a{
+    color: #ffdbb8;
+    font-size: 2.2em;
+	}
+
+  .fw_url {
+		display: none;
+  }
+
+  .footer_image{
+    width: 20%;
+  }
+}
+
+/*
+ *
+ * SMALL VIEW
+ *  optimized for mobile portrait
+ *
+ */
+
+@media screen and (max-width: 480px) {
+
+  .header_inner {
+    padding-top: 0;
+  }
+
+  .header_title {
+    margin: 0 4em 0 0.25em;
+    padding: 0.6em;
+  }
+
+ 	.header_myname {
+ 		font-size: 1.2em;
+ 	}
+
+ 	.header_subtitle {
+		font-size: 0.6em;
+ 	}
+
+ 	.header_logo {
+		height: 2.5em;
+		margin: 0.3em;
+	}
+
+  .header__menu {
+    padding: 0.5em 0.75em 0 0;
+  }
+
+  .header__menu svg {
+    width: 36px;
+  }
+
+  .hero {
+    min-height: 160px;
+    background-image: url("images/small_antelope_island.jpg");
+    /* This image was cropped for Art Direction */
+  }
+
+    article.description {
+    font-size: 12px;
+    width: 230px;
+    height: 160px;
+    background-color: rgba(0,0,0,0.5);
+    /* Increased opacity for better small text contrast */
+  }
+
+  .fw_grid {
+    padding-top: 2px;
+  }
+  .fw_container {
+    min-height: 70px;
+    margin-bottom: 1px;
+  }
+
+  .fw_image {
+    border: 1px none #ffdbb8;
+    width: 94px;
+    height: 63px;
+    margin: 7px 0 5px 25px;
+  }
+
+	.fw_banner {
+		font-size: 0.9em;
+		padding-top: 0.5em;
+  }
+
+	h5.fw_title {
+    margin:1.4em 0 0 0.75em ;
+  }
+
+  .fw_title a{
+    color: #ffdbb8;
+    font-size: 1.6em;
+  }
+}
+
+/*
+ *
+ *  ITSY-BITSY VIEW
+ *    Layout fixed for 300px and less.
+ *    Layout no longer responsive.
+ *    User needs to scroll for hidden layout.
+ *    Maintains continuity for tiny viewports.
+ *
+ */
+
+@media screen and (max-width: 300px) {
+
+  body {
+    width: 300px;
+  }
+}

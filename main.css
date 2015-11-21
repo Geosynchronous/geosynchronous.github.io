@@ -1,0 +1,289 @@
+
+/*
+ *
+ *  MAIN.CSS
+ *    Sets-up basic style for large viewports.
+ *
+ */
+
+
+html {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/*
+ * Boxsizing for elements & Pseudo-Classes
+ * Supports many older browsers
+ */
+
+*, *:before, *:after {
+  -webkit-box-sizing: inherit;
+  -moz-box-sizing: inherit;
+  box-sizing: inherit;
+  }
+
+body, html {
+  margin: 0px;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  padding: 0 10px 0;
+  font: 16px Roboto;
+  color: #747704;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+
+/*
+ * Heading Tag Scheme
+ *  modified by class as needed
+ *  h1 Main Title
+ *  h2 Main Subtitle
+ *  h3 Section Title
+ *  h4 Section Subtitle
+ *  h5 Sub-Section Title
+ *  h6 Sub-Section Subtitle
+ */
+
+h1, h2, h3, h4, h5 {
+  margin: 0;
+}
+
+.lighten_on_hover:hover {
+  opacity: 0.5;
+}
+
+/*
+ *
+ * Header
+ *
+ */
+
+.header {
+  padding-top: 35px;
+}
+
+.header_inner {
+  width: 100%;
+  margin: 0 auto 0;
+  padding-top: 0.5em;
+}
+
+.header_logo {
+  height: 7em;
+  margin: .5em;
+  vertical-align: top;
+}
+
+.header_title {
+  margin: 0.75em 0.25em;
+  display: inline-block;
+  float: right;
+  color: #747704;
+}
+
+.header_myname {
+  font: 100 3.5em Roboto;
+  text-align: right;
+
+}
+.header_subtitle {
+  font: 400 1.3em Roboto;
+  text-align: right;
+}
+
+/*
+ *
+ * Header/Content Divide Line
+ *
+ */
+
+hr {
+    display: block;
+    margin: 0.25em auto 0 auto;
+    border: inset 2px #bcbbbb;
+}
+
+
+/*
+ *
+ * Top Level Navigation
+ *    (Adapted from Lesson 5)
+ *    ( Example Code Solution)
+ *
+ */
+
+.nav {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #000000;
+}
+
+.nav__list {
+  width: 100%;
+  padding: 5px 0;
+  margin: 0;
+}
+
+.nav__item {
+  display: inline-block;
+  width: 24%;
+  text-align: center;
+  padding: 0;
+  text-transform: uppercase;
+}
+
+.nav a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.nav a:hover {
+  text-decoration: none;
+  color: #f8981c;
+}
+
+
+/*
+ *
+ * Content
+ *
+ */
+
+/*
+ *
+ * Hero
+ *
+ */
+
+.hero {
+  width: 100%;
+  min-height: 400px;
+ /*
+  * Responsive background images to be CSS specified as needed.
+  * 2x images not available due to limited stock image resource.
+  * Also greater resolution not needed from art perspective.
+  */
+  position: relative;
+  background-image: url("images/large_antelope_island.jpg");
+  background-size: cover;
+  transition-duration: 2s;
+}
+ /*
+  * TODO
+  * Shorthand syntax for CSS property "background" is a bear!!!
+  * Left in long form. (See above and below.)
+  * Get help...
+  */
+
+article.description {
+  background-color: rgba(0,0,0,0.333); /*Need for opaque txt*/
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  color: #ffffff;
+  padding: 1em;
+  font-size: 20px;
+}
+
+/*
+ *
+ * Featured Work
+ *
+ */
+
+ .featuredwork {
+   padding-bottom: 30px;
+ }
+
+.fw_banner {
+  font: 400 2.2em Roboto;
+  color: #bcbbbb;
+  padding: 1.05em 0 0 0.2em;
+}
+
+.fw_grid {
+  width: 100%;
+  margin: 0 auto 0;
+  padding-top: 0.8em;
+}
+
+.fw_container {
+  width: 300px;
+  min-height: 150px;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.fw_image {
+  width: 300px;
+  height: 200px;
+  border: 3px solid #747707;
+}
+
+.fw_health .fw_sashimi .fw_non-profit {
+  background-color: #ffffff;
+}
+
+.fw_title {
+  padding: 8px 0 0 0;
+}
+
+.fw_title a{
+  font: 400 2.76em Roboto;
+  color: #747704;
+}
+
+.fw_title  a:link{
+    text-decoration: none;
+}
+
+.fw_title  a:hover{
+    color: #f8981c;
+    text-decoration: none;
+}
+
+.fw_url {
+  margin: 3px;
+}
+
+.fw_url a{
+  font: 100 1em Roboto;
+  color: #bcbbbb;
+}
+
+.fw_url a:link{
+    text-decoration: none;
+}
+
+.fw_url a:hover{
+    text-decoration: none;
+    color: #f8981c;
+}
+
+.footer_inner{
+  display: inline-block;
+  width: 100%;
+  margin: 0 auto 0;
+  padding: 10px 10PX;
+  text-align: center;
+}
+
+.footer_image{
+  width: 15%;
+  padding: 0 3%;
+  vertical-align: top;
+}
+
+

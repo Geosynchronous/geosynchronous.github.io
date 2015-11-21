@@ -1,0 +1,217 @@
+<!doctype html>
+
+<html lang="en">
+
+<!
+George Fischer
+Project 1: PORTFOLIO
+  Front-End Web Development Apprentice
+  Udacity Nanodegree Certification Course
+>
+<!
+  Phase 4
+  Project Deadline 11/26/2015
+  Start 11/9/2015 10:32 PM
+  Finished
+>
+<!
+    TODO
+    1.  Change default images size for Featured Work from small to large. (DONE)
+    2.  Apply shorthand notation to CSS attributes. (DONE) (except "background.")
+    3.  Abbreviate Class label names where possible. (DONE)
+    4.  Freeze body width for 320px viewport and less. (DONE)
+    5.  Implement Navigation Menus. (DONE)
+    6.  Create seperate Javascript file for Menu-ing (PENDING)
+    7.  Implement rollover links for Featured Work examples. (DONE)
+    8.  Safari vertical scrollbar can obscure right margin. (DONE)
+    9.  Firefox srcset image upgrade problem (KNOWN ISSUES)
+          Applies to the Featured Work Images below.
+          Unresolved for Firefox 42.0
+          Responsive images do not update with enclosing viewport changes
+    10. Add title option for all graphics. (DONE)
+    11. Add footer (DONE)
+    12. Clean up code format and comments for HTML, CSS and javascript. (D)NE)
+    13. Move javascript code from .html to .js file (DONE)
+    14. Check Browsers and OS platforms working compatibilities.
+    15. Check HTML5 & CSS3 compliance.
+    16. Submit to forum for comments.
+    17. Minimize HTML & CSS files, and href them.
+    18. Submit to Udacity Grader for evaluation.
+>
+
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>George Fischer - Web Developer Apprentice</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400" rel="stylesheet">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="responsive.css">
+  </head>
+
+  <body>
+
+    <header class="header">
+      <div class="header_inner">
+
+        <a href="https://udacity.com/nanodegree">
+          <img
+            class="header_logo lighten_on_hover"
+            src="images/udacity-logo.jpg"
+            border="0"
+            alt="Udacity logo"
+            title="Udacity Nanodegree Certification Courses Rock!">
+        </a>
+
+        <div class="header_title">
+          <h1 class="header_myname">GEORGE FISCHER</h1>
+          <h2 class="header_subtitle">UDACITY FRONT-END WEB APPRENTICE</h2>
+        </div>
+<!
+      Hamburger menu for smaller viewports.
+        Taken from Lesson 5 Solution
+        XLMS and crytic path are unknown to me.
+>
+        <a id="menu" class="header__menu">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+            <path d="M2 6h20v3H2zm0 5h20v3H2zm0 5h20v3H2z"/>
+          </svg>
+        </a>
+
+      </div>
+    </header>
+
+    <hr>
+
+    <nav id="drawer" class="nav">
+      <ul class="nav__list">
+        <li class="nav__item"><a href="#">Featured</a></li>
+        <li class="nav__item"><a href="#">Resume</a></li>
+        <li class="nav__item"><a href="#">Timeline</a></li>
+        <li class="nav__item"><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+
+    <main>
+      <section class="content">
+
+        <section class="hero" title="The Great Salt Lake in Utah.">
+          <article class="description">
+            <h2>Brain for Hire</h2>
+            <p>Adaptive developer with depth and artistic eye for knocking out dynamic front-end web solutions. Strong background in science, technology, engineering, education and math. Passionate about online learning and teamwork.</p>
+          </article>
+        </section>
+
+        <section class="featuredwork">
+          <h5 class="fw_banner">Featured Work</h5>
+
+          <div class="fw_grid">
+
+            <div class="fw_container">
+              <div class="fw_health">
+                <a href="images/fullcirclecare.jpg">
+                  <img class="fw_image"
+                    src="images/health_large.jpg"
+                    srcset="images/health_x-large.jpg 702w 2x,
+                            images/health_large.jpg 300w,
+                            images/health_medium.jpg 200w,
+                            images/health_small.jpg 94w"
+                    sizes="(max-width: 480px) 94px,
+                            (max-width: 650px) 200px,
+                            300px"
+                    title="My first paid website job."
+                    alt="Full Circle Care website image."/>
+                </a>
+                <h5 class="fw_title">
+                  <a href="images/fullcirclecare.jpg">HEALTH</a>
+                </h5>
+                <p class="fw_url">
+                  <a href="images/fullcirclecare.jpg">http://fullcirclecare.com</a>
+                </p>
+              </div>
+            </div>
+
+            <div class="fw_container">
+              <div class="fw_sashimi">
+                <a href="images/shogun.jpg">
+                  <img class="fw_image"
+                    src="images/sashimi_large.jpg"
+                    srcset="images/sashimi_x-large.jpg 667w 2x,
+                            images/sashimi_large.jpg 300w,
+                            images/sashimi_medium.jpg 200w,
+                            images/sashimi_small.jpg 94w"
+                    sizes="(max-width: 480px) 94px,
+                            (max-width: 650px) 200px,
+                            300px"
+                    title="My first Pro Bono website."
+                    alt="Shogun Japanese Restaurant website image."/>
+                </a>
+                <h5 class="fw_title">
+                  <a href="images/shogun.jpg">SASHIMI</a>
+                </h5>
+                <p class="fw_url">
+                  <a href="images/shogun.jpg">http://shogunrestaurantslc.com
+                  </a>
+                </p>
+              </div>
+            </div>
+
+            <div class="fw_container">
+              <div class="fw_non-profit">
+                <a href="images/cmw.jpg">
+                  <img class="fw_image"
+                    src="images/non-profit_large.jpg"
+                    srcset="images/non-profit_x-large.jpg 1024w 2x,
+                            images/non-profit_large.jpg 300w,
+                            images/non-profit_medium.jpg 200w,
+                            images/non-profit_small.jpg 94w"
+                    sizes="(max-width: 480px) 94px,
+                            (max-width: 650px) 200px,
+                            300px"
+                    title="My first donated website."
+                    alt="Children's Media Workshop website image."/>
+                </a>
+                <h5 class="fw_title">
+                  <a href="images/cmw.jpg">NON-PROFIT</a>
+                </h5>
+                <p class="fw_url">
+                  <a href="images/cmw.jpg">https://cmw.org</a>
+                </p>
+              </div>
+            </div>
+
+          </div>
+        </section>
+      </section>
+    </main>
+
+    <hr>
+
+    <footer>
+      <div class="footer_inner">
+
+        <a href="https://github.com">
+          <img
+            class="footer_image"
+              src="images/GitHub_Logo.png"
+              alt="Github Logo"></a>
+
+        <a href="https://plus.google.com/117867255083823434092/posts">
+          <img
+            class="footer_image"
+              src="images/Google+_new_logo.png"
+              alt="Google Plus Logo"></a>
+
+        <a href="https://www.linkedin.com/in/georgefischer1">
+          <img
+            class="footer_image"
+              src="images/Logo-2C-48px-R.png"
+              alt="LinkedIn Logo"></a>
+      </div>
+    </footer>
+
+    <script src="menu_drawers.js"></script>
+
+  </body>
+</html>

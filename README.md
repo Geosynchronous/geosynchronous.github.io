@@ -7,3 +7,7 @@ Examples of work can be clicked on, to run in browser, which elimanates the need
 The code for this page was built with a feature of github that can be accessed in SETTINGS.
 
 TODO --- Improve page with custom HTML, CSS files etc...
+
+** Reviews
+Tdacity reviews for my github repository profile...
+- https://review.udacity.com/#!/reviews/132836

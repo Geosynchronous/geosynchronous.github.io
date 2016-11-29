@@ -1,3 +1,6 @@
+Note: This folder contains the my old Splash Page that I created with Github Automatic Page Generator.  It is being replaced by a new Material Design page that I manually load.
+
+
 ###This is my main splash page for my Github site.
 by George Fischer
 

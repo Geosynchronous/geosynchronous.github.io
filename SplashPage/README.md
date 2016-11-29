@@ -11,4 +11,4 @@ Udacity FEND Certified Developer
 
 ![Screenshot1 Original Splash Page](https://github.com/Geosynchronous/geosynchronous.github.io/blob/master/Docimages/Screen%20Shot%202016-11-28%20at%208.51.08%20PM.png)
 
-![Screenshot2 Original Splash Page](https://github.com/Geosynchronous/geosynchronous.github.io/blob/master/Docimages/Screen%20Shot%202016-11-28%20at%208.51.08%20PM.png)
+![Screenshot2 Original Splash Page](https://github.com/Geosynchronous/geosynchronous.github.io/blob/master/Docimages/Screen%20Shot%202016-11-28%20at%208.51.24%20PM.png)

@@ -20,7 +20,7 @@ Udacity FEND Certified Developer
 - Will implement a Material Design Layout with more links included, and better graphics
 - I also consider a Flat Design, but after reviewing the following links I decide to go with Material Desigh:
 https://blogs.adobe.com/creativecloud/flat-design-vs-material-design-what-makes-them-different/
-https://material.google.com/material-design/material-properties.html#material-properties-movement-of-material
+https://material.google.com/material-design/material-properties.html#material-properties-movement-of-material/
 https://www.sitepoint.com/top-5-material-design-frameworks-use-2015/
 http://materializecss.com/
 

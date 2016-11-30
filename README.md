@@ -1,15 +1,27 @@
-###This is my main splash page for my Github site.
+#Splash Page
 by George Fischer
+Udacity FEND Certified Developer
 
-TODO:  Make Original Splash page with Flat design, include links to repository for each project on it, and include contact and linked=in info in Readme
+##Content
+- Change Splash Page Layout
 
-The main purpose is to make an easily navigable web page.
-Examples of work can be clicked on, to run in browser, which elimanates the need to load all the files locally just to see the code run.
+##Change Splash Page Layout
+**Intro**
+- Now that I have finished the course, I want to create a better UI presence for my splash page.  Currently the present page was created with the automatic page generator from Github.  It looks like this:
 
-The code for this page was built with a feature of github that can be accessed in SETTINGS.
+![Screenshot1 Original Splash Page](https://github.com/Geosynchronous/geosynchronous.github.io/blob/master/Docimages/Screen%20Shot%202016-11-28%20at%208.51.08%20PM.png)
 
-TODO --- Improve page with custom HTML, CSS files etc...
+![Screenshot2 Original Splash Page](https://github.com/Geosynchronous/geosynchronous.github.io/blob/master/Docimages/Screen%20Shot%202016-11-28%20at%208.51.24%20PM.png)
 
-88 Reviews
-Udacity reviews for my github repository profile...
-- https://review.udacity.com/#!/reviews/132836
+- The old files are copied into `OldSplashPage` folder
+
+**The Change**
+- The Splash Page is being created in the `SplashPage` folder
+- Will implement a Material Design Layout with more links included, and better graphics
+- I also consider a Flat Design, but after reviewing the following links I decide to go with Material Desigh:
+  - https://blogs.adobe.com/creativecloud/flat-design-vs-material-design-what-makes-them-different/
+  - https://material.google.com/material-design/material-properties.html#material-properties-movement-of-material/
+  - https://www.sitepoint.com/top-5-material-design-frameworks-use-2015/
+  - http://materializecss.com/
+
+

@@ -23,3 +23,12 @@ h1 {
   line-height: 110%;
   margin: 1.1rem 0 0.68rem 0;
 }
+
+.project-block {
+	padding: 0 15px 15px 0;
+}
+
+#download-button {
+		float: center;
+		width: 100%;
+}

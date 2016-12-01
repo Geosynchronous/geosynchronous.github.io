@@ -37,6 +37,7 @@ h1 {
 .bio-pic {
 	width: 150px;
 	margin-top: 10px;
+	box-shadow: 2px 2px 5px black, 0 0 5px grey;
 }
 
 .bio-pad {

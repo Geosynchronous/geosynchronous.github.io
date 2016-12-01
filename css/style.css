@@ -65,5 +65,7 @@ a.anchor {
   padding-top: 100px;
 }
 
-
+.card {
+		box-shadow: 2px 2px 5px black, 0 0 5px grey;
+}
 

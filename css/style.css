@@ -52,7 +52,7 @@ h1 {
 	top: 0;
 	position: fixed;
 	z-index: 1000;
-	box-shadow: 5px 5px 20px black;
+	box-shadow: 5px 5px 20px black,0 0 30px grey;
 }
 
 a.anchor {
@@ -73,3 +73,7 @@ a.anchor {
 .chip {
 	box-shadow: 2px 2px 5px black, 0 0 5px grey;
 }
+
+.page-footer {
+	box-shadow: 0 0 20px grey;
+};

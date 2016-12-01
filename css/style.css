@@ -45,3 +45,8 @@ h1 {
 .button-img {
 	width: 100%;
 }
+
+.navbar-fixed {
+	top: 0;
+	position: fixed;
+}

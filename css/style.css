@@ -62,10 +62,10 @@ a.anchor {
 }
 
 .section.pad-top {
-  padding-top: 100px;
+  	padding-top: 100px;
 }
 
 .card {
-		box-shadow: 2px 2px 5px black, 0 0 5px grey;
+	box-shadow: 2px 2px 5px black, 0 0 5px grey;
 }
 

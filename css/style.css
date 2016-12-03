@@ -75,6 +75,10 @@ a.anchor {
 	font-weight: bolder;
 }
 
+.card-action a {
+	color: blue;
+}
+
 .info-code-txt {
 	font-size: 12px;
 	color: blue;

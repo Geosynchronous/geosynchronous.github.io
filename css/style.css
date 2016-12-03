@@ -24,12 +24,6 @@ h1 {
   margin: 1.1rem 0 0.68rem 0;
 }
 
-#download-button {
-	float: center;
-	width: 100%;
-	box-shadow: 3px 3px 8px black, 0 0 30px black;
-}
-
 .bio-pic {
 	width: 150px;
 	margin-top: 10px;
@@ -67,18 +61,18 @@ a.anchor {
 }
 
 .page-footer {
-	box-shadow: 0 0 20px grey;
+	box-shadow: 5px 5px 20px black,0 0 30px grey;
 }
 
 .card .card-content {
-	padding: 5px 20px 5px 20px;
+	padding: 5px 0 5px 0;
 	text-align: center;
 }
 
 .card .card-action {
-	padding: 5px 0 5px 0;
+	padding: 5px 0 5px 20px;
 	text-align: center;
-	font-weight: bold;
+	font-weight: bolder;
 }
 
 .info-code-txt {

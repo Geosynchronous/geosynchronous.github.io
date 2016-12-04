@@ -63,6 +63,13 @@ var skills = [{
     }];
 
 
+// BIO
+
+var bio = [{
+        name: 'George Fischer',
+        image: 'img/logos/me.jpg',
+        description: 'Developing Websites with my Front End Web skills, e-Learning and STEM background. An adaptive developer with depth and artistic eye for knocking out pages.'
+    }];
 
  // CONNECT
 

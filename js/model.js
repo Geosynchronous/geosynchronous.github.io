@@ -75,6 +75,7 @@ var skills = [{
 
 var bio = [{
         name: 'George Fischer',
+        title: 'Front End Web Developer',
         image: 'img/logos/me.jpg',
         description: 'Developing Websites with my Front End Web skills, e-Learning and STEM background. An adaptive developer with depth and artistic eye for knocking out pages.'
     }];

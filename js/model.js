@@ -6,11 +6,12 @@
 // Data Model Collections for;
 // 		Projects
 //		Skills
+//      Bio
 //		Connect
 
 
 // Projects
-// TODO - Having trouble dealing with multiple and long paragraphs
+// TODO - Add remaining projects...
 var projects = [{
         title: 'Map',
         image: 'img/projects/map.png',
@@ -18,8 +19,15 @@ var projects = [{
         demo: 'href="http://geosynchronous.us/RoundRiver/',
         code: 'https://github.com/Geosynchronous/P7-Neighborhood-Map',
         textInfoList: 'HTML, CSS, JAVASCRIPT DESIGN PATTERNS, DOM, AJAX, GOOGLE MAPS API, OPEN WEATHER MAP API, MVVM, KNOCKOUT, JQUERY',
-        textInfoDescription: ''
-        }];
+        textInfoDescription: [
+        	'The "Neighborhood Map Project" is the capstone project for the Udacity FEND Nanodegree course.  In addition,this project has real world application. It is a prototype for Outreach Education at ROUND RIVER CONSERVATION, which is a NGO Non-Profit.',
+        	'The purpose of this Map App is to provide live data to update geolocations information windows on a map.  Selecting a marker on the map or a listed item on the options box will open an information window on the map.  The open window renders an image for that location, and real time weather data.  The markers and list locations can be filtered by selecting various buttons for that purpose. The info link on the info window links to the specific Round River website page for that location.  The weather icon links to a worldwide weather map, that can be used to access more detailed weather reports.',
+        	'Third party APIs were handled with AJAX to provide real time data. API loading error messages are invoked when a load failure occurs. Google Map API provides the map and mapping functionalities, and Open Weather Map API provides real time weather data for specific locations.',
+        	'The KNOCKOUT framework was used to make the UI and MVVM code model optimal.  For instance, the listed locations and marker locations highlight simultaneously when a user hovers the cursor over them.  Typically this is a tricky thing to code for, but with Knockout it is much easier to do, with a lot less code.  JQUERY is needed by KNOCKOUT. All code the DOM updating was done using KNOCKOUT, though JQUERY could have provided some of that functionality as well.',
+        	'The MVVM model paragdigm was used to serperate concerns of model data,  user view, and user control. The options box and google map code were also seperated concerns as google maps itself does not work with KNOCKOUT',
+        	'The design is responsive for desktop, tablet and phone hardware platforms. Using different platforms to view this app, and changing browser window width will reveal the responsiveness of this design.'
+        	]
+    }];
 
 
 // Skills

@@ -15,7 +15,6 @@
 var projects = [{
         title: 'Map',
         image: 'img/projects/map.png',
-        imageAlt: 'Map Project Image',
         demo: 'href="http://geosynchronous.us/RoundRiver/',
         code: 'https://github.com/Geosynchronous/P7-Neighborhood-Map',
         textInfoList: 'HTML, CSS, JAVASCRIPT DESIGN PATTERNS, DOM, AJAX, GOOGLE MAPS API, OPEN WEATHER MAP API, MVVM, KNOCKOUT, JQUERY',
@@ -26,8 +25,82 @@ var projects = [{
         	'The KNOCKOUT framework was used to make the UI and MVVM code model optimal.  For instance, the listed locations and marker locations highlight simultaneously when a user hovers the cursor over them.  Typically this is a tricky thing to code for, but with Knockout it is much easier to do, with a lot less code.  JQUERY is needed by KNOCKOUT. All code the DOM updating was done using KNOCKOUT, though JQUERY could have provided some of that functionality as well.',
         	'The MVVM model paragdigm was used to serperate concerns of model data,  user view, and user control. The options box and google map code were also seperated concerns as google maps itself does not work with KNOCKOUT',
         	'The design is responsive for desktop, tablet and phone hardware platforms. Using different platforms to view this app, and changing browser window width will reveal the responsiveness of this design.'
-        	]
-    }];
+   		]
+	},{
+        title: 'Game',
+        image: 'img/projects/game.png',
+        demo: 'http://geosynchronous.github.io/P5-Game/',
+        code: 'https://github.com/Geosynchronous/P5-Game',
+        textInfoList: 'HTML5 CANVAS, CSS, OBJECT ORIENTED JAVASCRIPT, ANIMATIONS, WRITING READMEs',
+        textInfoDescription: [
+        	'The "Arcade Game Project" in the Udacity FEND course focuses on the above listed coding topics. The Arcade Game was designed to work on the desktop with UI controls using a keyboard. It can be viewed on tablets and phones, though no touch gaming controls will be available.',
+        	'The basic object of the game is for the avatar to cross the jittering and moving stream of bugs without getting touched to score points.  There are 5 increasingly difficult levels to this game called LIFECYCLES.  The INFO button explains details of how to play the Game.'
+       	]
+   },{
+      	title: 'Portfolio',
+        image: 'img/projects/portfolio.png',
+        demo: 'http://geosynchronous.github.io/P3-Portfolio/',
+        code: 'https://github.com/Geosynchronous/P3-Portfolio',
+        textInfoList: 'HTML5 SEMANTIC TAGS, BOOTSTRAP CSS, FLEXBOX, RESPONSIVE DESIGN and IMAGES',
+        textInfoDescription: [
+        	'The "Build a Portfolio Site Project" in the Udacity FEND course focuses on the above listed coding topics.  The responsive design can be viewed on desktops, tablets, and phones.  Changing the browser window width, reveals responsive transitions. The menu items are not actively linked in this demo',
+        	'Currently, some examples screen shots of my previous client web site developments are shown. I like the basic clean design of this Portfolio, and may develop it further in the future to make available projects from all my skilled disciplines.'
+       	]
+   },{
+      	title: 'Resume',
+        image: 'img/projects/resume.png',
+        demo: 'http://geosynchronous.github.io/P4-Resume/',
+        code: 'https://github.com/Geosynchronous/P4-Resume',
+        textInfoList: 'HTML, CSS, JS, DATA TYPES, ENCAPSULATION, JQUERY, DOM MANIPULATION, EVENT HANDLERS, FLOW CONTROL, JSLINT, BEAUTIFIERS, BOOTSTRAP CSS ',
+        textInfoDescription: [
+        	'The "Online Resume Project" in the Udacity FEND course focuses on the above listed coding topics.  The content of each contained in Bootstrap Collapseable Container.  Only one Container can be open at a time. The content of the resume is not complete, and still needs to be updated. It is a response design that works on desktop, tablet, and phones.  There is a lot about this design I like, and I will probably use a version of this for my professional profiles.'
+       	]
+   },{
+      	title: 'Website Optimization Project Image',
+        image: 'img/projects/optimize.png',
+        demo: 'http://geosynchronous.github.io/P6-Mobile-Portfolio/views/pizza.html',
+        code: 'https://github.com/Geosynchronous/P6-Mobile-Portfolio',
+        textInfoList: 'HTML, CSS, JAVASCRIPT, BOOTSTRAP-GRID, ANIMATION, CRP, RAIL, OPTIMIZATION, JANK, COMPOSITING, CHROME DEV TOOLS, GOOGLE PAGESPEED',
+        textInfoDescription: [
+        	'The "Website Optimization Project" in the Udacity FEND course focuses on the above listed coding topics. The important web page for working on optimization, is the one invoked by pizza.html. When scrolling the web page, or changing the width of the browser window, the background pizzas would animate. I learned a lot about how to use Chrome Dev Tools to observe the inner workings of the Critical Rendering Path (CRP), and determine if my optimization efforts were working to create a smooth rendering UI experience.'
+       	]
+   },{
+      	title: 'Testing',
+        image: 'img/projects/testing.png',
+        demo: 'https://github.com/Geosynchronous/',
+        code: 'https://github.com/Geosynchronous/P8-Feed-Reader-Testing',
+        textInfoList: 'HTML, CSS, JAVASCRIPT, JASMINE, BDD, TDD, RSS FEEDS',
+        textInfoDescription: [
+        	'The "Feed Reader Testing Project" in the Udacity FEND course focuses on the above listed coding topics. Sample Feed Reader App code needed to have a specified set of Suites written to Test if the Expecations work. Test and Behaviour driven designs were used.  The test code was actually scripted at the end of the App, so it would automatically run everytime the App is invoked. The current state of the App has no errors evident.  Changing the code, or turning off the internet connection can cause the JASMINE code to dispay error messages.'
+       	]
+   },{
+      	title: 'Tracker',
+        image: 'HTML,CSS, JS, BACKBONE, FIREBASE, MVVM, BOWER, GULP, GIT',
+        demo: 'NONE',
+        code: 'NONE',
+        textInfoList: 'HTML,CSS, JS, BACKBONE, FIREBASE, MVVM, BOWER, GULP, GIT',
+        textInfoDescription: [
+        	'I plan on doing the optional Health Tracker Project to learn about BACKBONE and FIREBASE frameworks.I also plan on strenghting my skills, with BOWER, GULP, and GIT.'
+       	]
+   },{
+      	title: 'Splash',
+        image: 'img/projects/splash.png',
+        demo: 'NONE',
+        code: 'https://github.com/Geosynchronous/geosynchronous.github.io',
+        textInfoList: 'HTML,CSS, JS, SPA, MATERIALIZE FRAMEWORK, MVVM',
+        textInfoDescription: [
+        	'This is my Splash Website Project. It is the Splash Page for my Github Repository, which introduces the User to an overview of my Web Projects and Skills. It is the webpage you are currently on.  It is a SINGLE PAGE APPLICATION (SPA)  I used the Materialize Framework on this project for the first time, and like how easy it is to develop my ideas with. I started with a simple template and refactored it to meet my needs. It is a responsive design that works well on desktop, tablet and mobile phones.'
+       	]
+   },{
+      	title: 'Repository',
+        image: 'img/projects/repository.png',
+        demo: 'NONE',
+        code: 'https://github.com/Geosynchronous',
+        textInfoList: 'GIT, GITHUB',
+        textInfoDescription: [
+        	'You can see all my coding projects in my Github Repository. I just started using this tool when I began the Udacity FEND Nanodegree course.  I have mainly used it so far for cloning, downloading, pulling and creating repositories, and versioning commits of my ongoing development work.  I am so thankful to Github for providing this essential service for free. I look forward to collobrating on open source projects here.'
+       	]
+}];
 
 
 // Skills

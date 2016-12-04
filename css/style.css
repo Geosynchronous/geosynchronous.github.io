@@ -24,6 +24,10 @@ h1 {
   margin: 1.1rem 0 0.68rem 0;
 }
 
+.bio {
+	margin: 0;
+}
+
 .bio-pic {
 	width: 150px;
 	margin-top: 10px;

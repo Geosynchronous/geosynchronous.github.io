@@ -145,14 +145,6 @@ var skills = [{
     }];
 
 
-// BIO
-
-var bio = {
-        name: 'George Fischer',
-        title: 'Front End Web Developer',
-        image: 'img/logos/me.jpg',
-        description: 'Developing Websites with my Front End Web skills, e-Learning and STEM background. An adaptive developer with depth and artistic eye for knocking out pages.'
-    };
 
  // CONNECT
 
@@ -188,7 +180,19 @@ var connect = [{
 
 
 
-// Data Model Collections for index.html styled content elements
+// BIO
+
+// Data Objects
+
+var bio = {
+        name: 'George Fischer',
+        title: 'Front End Web Developer',
+        image: 'img/logos/me.jpg',
+        description: 'Developing Websites with my Front End Web skills, e-Learning and STEM background. An adaptive developer with depth and artistic eye for knocking out pages.'
+    };
+
+
+//  HTML styled content elements
 
 var HTMLbioPic = '<img src="%data%" class="bio-pic" alt="Bio Photo">',
     HTMLbioTitle = '<figcaption class="white-text"> %data% </figcaption>',
@@ -197,8 +201,7 @@ var HTMLbioPic = '<img src="%data%" class="bio-pic" alt="Bio Photo">',
 
 
 // Encapsulated Data Functions
-// Data Model Data Added to DOM
-// (Attach/Insert to index.html Elements)
+// Data Added to DOM (index.html)
 
     bio.display = function() {
 

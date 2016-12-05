@@ -3,10 +3,9 @@
 // Model.js by George Fischer
 // Fall 2016
 
-// Data Model Collections for index.html structure
 
 
-// Data Model Collections for;
+// Data Model Content Collections for;
 // 		Projects
 //		Skills
 //      Bio
@@ -148,12 +147,12 @@ var skills = [{
 
 // BIO
 
-var bio = [{
+var bio = {
         name: 'George Fischer',
         title: 'Front End Web Developer',
         image: 'img/logos/me.jpg',
         description: 'Developing Websites with my Front End Web skills, e-Learning and STEM background. An adaptive developer with depth and artistic eye for knocking out pages.'
-    }];
+    };
 
  // CONNECT
 
@@ -186,3 +185,29 @@ var connect = [{
         image: 'img/logos/geo.png',
         url: 'mailto:geosynchronous@mac.com?subject= George Fischer: Your Github Splash Page'
     }];
+
+
+
+// Data Model Collections for index.html structures
+
+var HTMLbioPic = '<img src="%data%" class="bio-pic" alt="Bio Photo">',
+    HTMLbioTitle = '<figcaption class="white-text"> %data% </figcaption>',
+    HTMLbioName = '<figcaption class="white-text"> %data% </figcaption>';
+
+
+
+// Encapsulated Data Functions
+// Data Model Data Added to DOM
+// (Attach/Insert to index.html Elements)
+
+    bio.display = function() {
+
+        var formattedImage = HTMLbioPic.replace("%data%", bio.image),
+            formattedTitle = HTMLbioTitle.replace("%data%", bio.title),
+            formattedName = HTMLbioName.replace("%data%", bio.name);
+
+        $(".bio")
+            .append(formattedImage)
+            .append(formattedTitle)
+            .append(formattedName);
+}

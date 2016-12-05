@@ -7,3 +7,6 @@
 // the DOM with Styled Data from model.js
 // (MVVM Refactor led to this Code)
 
+// Populate Sections
+bio.display();
+

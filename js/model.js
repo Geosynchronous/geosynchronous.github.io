@@ -11,7 +11,12 @@
 //      Bio
 //		Connect
 
-// Projects
+
+
+//
+// PROJECTS
+//
+
 // TODO - Add remaining projects...
 var projects = [{
         title: 'Map',
@@ -103,8 +108,9 @@ var projects = [{
        	]
 }];
 
-
-// Skills
+//
+// SKILLS
+//
 
 var skills = [{
         title: 'HTML CSS JS',
@@ -145,8 +151,9 @@ var skills = [{
     }];
 
 
-
- // CONNECT
+//
+// CONNECT
+//
 
 var connect = [{
         title: 'LinkedIn',
@@ -180,7 +187,9 @@ var connect = [{
 
 
 
+//
 // BIO
+//
 
 // Data Objects
 

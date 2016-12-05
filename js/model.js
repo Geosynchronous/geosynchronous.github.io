@@ -188,12 +188,12 @@ var connect = [{
 
 
 
-// Data Model Collections for index.html structures
+// Data Model Collections for index.html styled content elements
 
 var HTMLbioPic = '<img src="%data%" class="bio-pic" alt="Bio Photo">',
     HTMLbioTitle = '<figcaption class="white-text"> %data% </figcaption>',
-    HTMLbioName = '<figcaption class="white-text"> %data% </figcaption>';
-
+    HTMLbioName = '<figcaption class="white-text"> %data% </figcaption>',
+    HTMLbioDescription = '<p class="bio-pad white-text"> %data% </p>';
 
 
 // Encapsulated Data Functions
@@ -204,10 +204,15 @@ var HTMLbioPic = '<img src="%data%" class="bio-pic" alt="Bio Photo">',
 
         var formattedImage = HTMLbioPic.replace("%data%", bio.image),
             formattedTitle = HTMLbioTitle.replace("%data%", bio.title),
-            formattedName = HTMLbioName.replace("%data%", bio.name);
+            formattedName = HTMLbioName.replace("%data%", bio.name),
+            formattedDescription = HTMLbioDescription.replace("%data%", bio.description);
 
         $(".bio")
             .append(formattedImage)
             .append(formattedTitle)
             .append(formattedName);
+
+        $(".bio-description")
+            .append(formattedDescription);
+
 }

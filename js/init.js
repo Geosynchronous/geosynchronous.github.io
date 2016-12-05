@@ -1,3 +1,7 @@
+"use strict";
+
+// Original From Materialize Framework
+
 (function($){
   $(function(){
 

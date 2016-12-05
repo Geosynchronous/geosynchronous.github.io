@@ -3,12 +3,14 @@
 // Model.js by George Fischer
 // Fall 2016
 
+// Data Model Collections for index.html structure
+
+
 // Data Model Collections for;
 // 		Projects
 //		Skills
 //      Bio
 //		Connect
-
 
 // Projects
 // TODO - Add remaining projects...

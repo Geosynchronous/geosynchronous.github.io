@@ -51,7 +51,7 @@ var projects = [{
         image: 'img/projects/resume.png',
         demo: 'http://geosynchronous.github.io/P4-Resume/',
         code: 'https://github.com/Geosynchronous/P4-Resume',
-        textInfoList: 'HTML, CSS, JS, DATA TYPES, ENCAPSULATION, JQUERY, DOM MANIPULATION, EVENT HANDLERS, FLOW CONTROL, JSLINT, BEAUTIFIERS, BOOTSTRAP CSS ',
+        textInfoList: 'HTML, CSS, JS, DATA TYPES, ENCAPSULATION, JQUERY, DOM MANIPULATION, EVENT HANDLERS, FLOW CONTROL, JSLINT, BEAUTIFIERS, BOOTSTRAP CSS, JSON ',
         textInfoDescription: [
         	'The "Online Resume Project" in the Udacity FEND course focuses on the above listed coding topics.  The content of each contained in Bootstrap Collapseable Container.  Only one Container can be open at a time. The content of the resume is not complete, and still needs to be updated. It is a response design that works on desktop, tablet, and phones.  There is a lot about this design I like, and I will probably use a version of this for my professional profiles.'
        	]

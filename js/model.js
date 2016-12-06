@@ -196,6 +196,7 @@ var connect = [{
 var bio = {
         name: 'George Fischer',
         title: 'Front End Web Developer',
+        certificate: 'Udacity Certified',
         image: 'img/logos/me.jpg',
         description: 'Developing Websites with my Front End Web skills, e-Learning and STEM background. An adaptive developer with depth and artistic eye for knocking out pages.'
     };
@@ -205,6 +206,7 @@ var bio = {
 
 var HTMLbioPic = '<img src="%data%" class="bio-pic" alt="Bio Photo">',
     HTMLbioTitle = '<figcaption class="white-text"> %data% </figcaption>',
+    HTMLbioCertified = '<a class="black-text" href="img/certificates/udacity-fend-certificate.pdf">%data%</a>',
     HTMLbioName = '<figcaption class="white-text"> %data% </figcaption>',
     HTMLbioDescription = '<p class="bio-pad white-text"> %data% </p>';
 
@@ -216,13 +218,15 @@ var HTMLbioPic = '<img src="%data%" class="bio-pic" alt="Bio Photo">',
 
         var formattedImage = HTMLbioPic.replace("%data%", bio.image),
             formattedTitle = HTMLbioTitle.replace("%data%", bio.title),
+            formattedCertificate= HTMLbioCertified.replace("%data%", bio.certificate),
             formattedName = HTMLbioName.replace("%data%", bio.name),
             formattedDescription = HTMLbioDescription.replace("%data%", bio.description);
 
         $(".bio")
             .append(formattedImage)
+            .append(formattedName)
             .append(formattedTitle)
-            .append(formattedName);
+            .append(formattedCertificate);
 
         $(".bio-description")
             .append(formattedDescription);

@@ -206,7 +206,7 @@ var bio = {
 
 var HTMLbioPic = '<img src="%data%" class="bio-pic" alt="Bio Photo">',
     HTMLbioTitle = '<figcaption class="white-text"> %data% </figcaption>',
-    HTMLbioCertified = '<a class="black-text" href="img/certificates/udacity-fend-certificate.pdf">%data%</a>',
+    HTMLbioCertified = '<a class="orange-text" href="img/certificates/udacity-fend-certificate.pdf">%data%</a>',
     HTMLbioName = '<figcaption class="white-text"> %data% </figcaption>',
     HTMLbioDescription = '<p class="bio-pad white-text"> %data% </p>';
 

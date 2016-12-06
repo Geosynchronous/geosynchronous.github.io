@@ -147,7 +147,7 @@ var skills = [{
     },{
         title: 'Dev Ed',
         icon: 'account_circle',
-        text: 'I love to learn. It is a continually ongoing process for me.  I just finished the <strong>Udacity FEND Nanodegree</strong>, and it was awesome.  Now I want to deepen some skills further from that course and move into the <strong>Fullstack Nanodegree</strong> to strengthen and extend my web dev skills.  My moonshot would be <strong>AI, Data Analysis, IOT, and Self Driving Car Nanodegrees</strong>, as it would leverage my <strong>Instrumentation Physics and Electronic Skills.</strong>'
+        text: 'I love to learn. It is a continually ongoing process for me.  I just finished the <strong>Udacity FEND Nanodegree</strong>, and it was awesome.  Now I want to deepen some skills further from that course and move into the <strong>Fullstack Nanodegree</strong> to strengthen and extend my web dev skills.  My moonshot would be <strong>AI, Data Analysis, IOT, and Self Driving Car Nanodegrees</strong>, as it would leverage my <strong>Instrumentation Physics, Engineering, Biology, Research and Electronic Skills.</strong>'
     }];
 
 
@@ -165,7 +165,7 @@ var bio = {
         title2: 'Front End Web Developer',
         certificate: 'Udacity Certified',
         image: 'img/logos/me.jpg',
-        description: 'Developing Websites with my Front End Web skills, e-Learning and STEM background. A Creative Technologist with depth and artistic eye for knocking out projects.'
+        description: 'Developing Websites with my Front End Web skills, STEM and eLearning background. A Creative Technologist with depth and artistic eye for knocking out projects.'
     };
 
 
@@ -174,7 +174,7 @@ var bio = {
 var HTMLbioPic = '<img src="%data%" class="bio-pic" alt="Bio Photo">',
     HTMLbioTitle = '<figcaption class="white-text"> %data% </figcaption>',
     HTMLbioCertified = '<a class="black-text" href="img/certificates/udacity-fend-certificate.pdf">%data%</a>',
-    HTMLbioName = '<figcaption class="white-text"> %data% </figcaption>',
+    HTMLbioName = '<p class="bio-name-text white-text"> %data% </p>',
     HTMLbioDescription = '<p class="bio-pad white-text"> %data% </p>';
 
 
@@ -190,9 +190,11 @@ var HTMLbioPic = '<img src="%data%" class="bio-pic" alt="Bio Photo">',
             formattedName = HTMLbioName.replace("%data%", bio.name),
             formattedDescription = HTMLbioDescription.replace("%data%", bio.description);
 
-        $(".bio")
+        $(".bio-name")
+            .append(formattedName);
+
+        $(".bio-fig")
             .append(formattedImage)
-            .append(formattedName)
             .append(formattedTitle1)
             .append(formattedTitle2)
             .append(formattedCertificate);

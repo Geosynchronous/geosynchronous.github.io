@@ -24,8 +24,13 @@ h1 {
   margin: 1.1rem 0 0.68rem 0;
 }
 
-.bio {
+.bio-fig {
 	margin: 0;
+}
+
+.bio-name-text {
+	margin: 0;
+	font-size: 22px;
 }
 
 .bio-pic {
@@ -93,6 +98,7 @@ a.anchor {
 .udacity-logo {
 	width: 100px;
 }
+
 
 @media only screen and (max-width: 992px) {
   .side-nav {

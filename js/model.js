@@ -161,10 +161,11 @@ var skills = [{
 
 var bio = {
         name: 'George Fischer',
-        title: 'Front End Web Developer',
+        title1: 'Creative Technologist',
+        title2: 'Front End Web Developer',
         certificate: 'Udacity Certified',
         image: 'img/logos/me.jpg',
-        description: 'Developing Websites with my Front End Web skills, e-Learning and STEM background. An adaptive developer with depth and artistic eye for knocking out pages.'
+        description: 'Developing Websites with my Front End Web skills, e-Learning and STEM background. A Creative Technologist with depth and artistic eye for knocking out projects.'
     };
 
 
@@ -183,7 +184,8 @@ var HTMLbioPic = '<img src="%data%" class="bio-pic" alt="Bio Photo">',
     bio.display = function() {
 
         var formattedImage = HTMLbioPic.replace("%data%", bio.image),
-            formattedTitle = HTMLbioTitle.replace("%data%", bio.title),
+            formattedTitle1 = HTMLbioTitle.replace("%data%", bio.title1),
+            formattedTitle2 = HTMLbioTitle.replace("%data%", bio.title2),
             formattedCertificate= HTMLbioCertified.replace("%data%", bio.certificate),
             formattedName = HTMLbioName.replace("%data%", bio.name),
             formattedDescription = HTMLbioDescription.replace("%data%", bio.description);
@@ -191,7 +193,8 @@ var HTMLbioPic = '<img src="%data%" class="bio-pic" alt="Bio Photo">',
         $(".bio")
             .append(formattedImage)
             .append(formattedName)
-            .append(formattedTitle)
+            .append(formattedTitle1)
+            .append(formattedTitle2)
             .append(formattedCertificate);
 
         $(".bio-description")

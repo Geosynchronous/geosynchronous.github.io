@@ -250,24 +250,28 @@ var connect = [{
 //  HTML styled content elements
 
 var HTMLconnectPic = '<img src="%img%" alt="%title% Logo">',
-    HTMLconnectUrl = '<a class="black-text"%link%">%title%</a>';
+    HTMLconnectUrl = '<a class="black-text" href="%url%">%title%</a>';
 
 // Encapsulated Data Functions
 // Data Added to DOM (index.html)
 
+
     connect.display = function() {
 
-        var formattedImage1 = HTMLconnectPic.replace("%img%", connect[0].image);
-        console.log(formattedImage1);
-        var formattedImage2 = formattedImage1.replace("%title%", connect[0].title);
-        console.log(formattedImage2);
-        var formattedChip = '<li><div class="chip">' + formattedImage2 + '</div></li>';
-        console.log(formattedChip);
+        var  len = connect.length;
+        for (var i = 0; i < len; i++) {
 
-        $(".connectChips")
-            .append(formattedChip);
+            var formattedImage1 = HTMLconnectPic.replace("%img%", connect[i].image);
+            var formattedImage2 = formattedImage1.replace("%title%", connect[i].title);
 
-        console.log("DONE");
+            var formattedUrl1 = HTMLconnectUrl.replace("%url%", connect[i].url);
+            var formattedUrl2 = formattedUrl1.replace("%title%", connect[i].title);
+
+            var formattedChip = '<li><div class="chip">' + formattedImage2 + formattedUrl2 + '</div></li>';
+
+            $(".connectChips")
+                .append(formattedChip);
+        }
 }
 
 

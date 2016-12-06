@@ -151,15 +151,67 @@ var skills = [{
     }];
 
 
+
+
+//
+// BIO
+//
+
+// Data Objects
+
+var bio = {
+        name: 'George Fischer',
+        title: 'Front End Web Developer',
+        certificate: 'Udacity Certified',
+        image: 'img/logos/me.jpg',
+        description: 'Developing Websites with my Front End Web skills, e-Learning and STEM background. An adaptive developer with depth and artistic eye for knocking out pages.'
+    };
+
+
+//  HTML styled content elements
+
+var HTMLbioPic = '<img src="%data%" class="bio-pic" alt="Bio Photo">',
+    HTMLbioTitle = '<figcaption class="white-text"> %data% </figcaption>',
+    HTMLbioCertified = '<a class="black-text" href="img/certificates/udacity-fend-certificate.pdf">%data%</a>',
+    HTMLbioName = '<figcaption class="white-text"> %data% </figcaption>',
+    HTMLbioDescription = '<p class="bio-pad white-text"> %data% </p>';
+
+
+// Encapsulated Data Functions
+// Data Added to DOM (index.html)
+
+    bio.display = function() {
+
+        var formattedImage = HTMLbioPic.replace("%data%", bio.image),
+            formattedTitle = HTMLbioTitle.replace("%data%", bio.title),
+            formattedCertificate= HTMLbioCertified.replace("%data%", bio.certificate),
+            formattedName = HTMLbioName.replace("%data%", bio.name),
+            formattedDescription = HTMLbioDescription.replace("%data%", bio.description);
+
+        $(".bio")
+            .append(formattedImage)
+            .append(formattedName)
+            .append(formattedTitle)
+            .append(formattedCertificate);
+
+        $(".bio-description")
+            .append(formattedDescription);
+
+}
+
+
+
 //
 // CONNECT
 //
+
+// Data Objects
 
 var connect = [{
         title: 'LinkedIn',
         image: 'img/logos/linkedin.png',
         url: 'www.linkedin.com/in/georgefischer1'
- 	},{
+    },{
         title: 'Udacity Profile',
         image: 'img/logos/udacity.png',
         url: 'https://profiles.udacity.com/u/george3'
@@ -186,49 +238,37 @@ var connect = [{
     }];
 
 
-
-//
-// BIO
-//
-
-// Data Objects
-
-var bio = {
-        name: 'George Fischer',
-        title: 'Front End Web Developer',
-        certificate: 'Udacity Certified',
-        image: 'img/logos/me.jpg',
-        description: 'Developing Websites with my Front End Web skills, e-Learning and STEM background. An adaptive developer with depth and artistic eye for knocking out pages.'
-    };
+            // <ul class"connectChips">
+            //   <li>
+            //     <div class="chip">
+            //       <img src="img/logos/linkedin.png" alt="LinkedIn Logo">
+            //       <a class="black-text" href="https://www.linkedin.com/in/georgefischer1">LinkedIn</a>
+            //     </div>
+            //   </li>
 
 
 //  HTML styled content elements
 
-var HTMLbioPic = '<img src="%data%" class="bio-pic" alt="Bio Photo">',
-    HTMLbioTitle = '<figcaption class="white-text"> %data% </figcaption>',
-    HTMLbioCertified = '<a class="orange-text" href="img/certificates/udacity-fend-certificate.pdf">%data%</a>',
-    HTMLbioName = '<figcaption class="white-text"> %data% </figcaption>',
-    HTMLbioDescription = '<p class="bio-pad white-text"> %data% </p>';
-
+var HTMLconnectPic = '<img src="%img%" alt="%title% Logo">',
+    HTMLconnectUrl = '<a class="black-text"%link%">%title%</a>';
 
 // Encapsulated Data Functions
 // Data Added to DOM (index.html)
 
-    bio.display = function() {
+    connect.display = function() {
 
-        var formattedImage = HTMLbioPic.replace("%data%", bio.image),
-            formattedTitle = HTMLbioTitle.replace("%data%", bio.title),
-            formattedCertificate= HTMLbioCertified.replace("%data%", bio.certificate),
-            formattedName = HTMLbioName.replace("%data%", bio.name),
-            formattedDescription = HTMLbioDescription.replace("%data%", bio.description);
+        var formattedImage1 = HTMLconnectPic.replace("%img%", connect[0].image);
+        console.log(formattedImage1);
+        var formattedImage2 = formattedImage1.replace("%title%", connect[0].title);
+        console.log(formattedImage2);
+        var formattedChip = '<li><div class="chip">' + formattedImage2 + '</div></li>';
+        console.log(formattedChip);
 
-        $(".bio")
-            .append(formattedImage)
-            .append(formattedName)
-            .append(formattedTitle)
-            .append(formattedCertificate);
+        $(".connectChips")
+            .append(formattedChip);
 
-        $(".bio-description")
-            .append(formattedDescription);
-
+        console.log("DONE");
 }
+
+
+

@@ -9,4 +9,5 @@
 
 // Populate Sections
 bio.display();
+connect.display();
 

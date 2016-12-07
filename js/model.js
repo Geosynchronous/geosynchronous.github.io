@@ -199,6 +199,7 @@ projects.display = function() {
             formattedProjectsEntry = formattedProjectsEntry.concat('+' + formattedDescription);
         }
     formattedProjectsEntry = formattedProjectsEntry.concat(''+' + </div></div></div>');
+    console.log(formattedProjectsEntry);
 
     $(".projects-entries")
     .append(formattedProjectsEntry);

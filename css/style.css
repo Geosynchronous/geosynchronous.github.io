@@ -99,6 +99,14 @@ a.anchor {
 	width: 100px;
 }
 
+.section {
+	padding: 0;
+}
+
+.skills-pad {
+	padding-top: 40px;
+}
+
 
 @media only screen and (max-width: 992px) {
   .side-nav {

@@ -203,6 +203,7 @@ projects.display = function() {
         for (var j = 0; j < len2; j++) {
                 formattedDescription = HTMLprojectsDescription.replace("%description%", projects[i].textInfoDescription[j]);
                 formattedProjectsEntry = formattedProjectsEntry.concat('+' + formattedDescription);
+                formattedProjectsEntry = formattedProjectsEntry.concat(''+' + </div></div></div>');
             }
         formattedProjectsEntry = formattedProjectsEntry.concat(''+' + </div></div></div>');
         console.log(formattedProjectsEntry);

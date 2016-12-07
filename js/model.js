@@ -184,10 +184,10 @@ projects.display = function() {
                         '</div>' +
                         '<div class="card-action">' +
                             '<a class="light-blue-text activator" href="#!">Info</a>';
-        If(projects[i].demo === !('NONE')) {
+        if (projects[i].demo === !('NONE')) {
             formattedProjectsEntry = formattedProjectsEntry.push('+' + formattedDemo);
         }
-        // If(projects[i].code === !('NONE')) {
+        // if (projects[i].code === !('NONE')) {
         //     formattedProjectsEntry = formattedProjectsEntry.push('+' + formattedCode);
         // }
         // formattedProjectsEntry = formattedProjectsEntry.push(''+' + </div>' + formattedCardReveal + formattedList);

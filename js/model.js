@@ -17,7 +17,8 @@
 // PROJECTS
 //
 
-// TODO - Add remaining projects...
+// Data Objects
+
 var projects = [{
         title: 'Map',
         image: 'img/projects/map.png',
@@ -107,6 +108,101 @@ var projects = [{
         	'You can see all my coding projects in my Github Repository. I just started using this tool when I began the Udacity FEND Nanodegree course.  I have mainly used it so far for cloning, downloading, pulling and creating repositories, and versioning commits of my ongoing development work.  I am so thankful to Github for providing this essential service for free. I look forward to collobrating on open source projects here.'
        	]
 }];
+
+      // <div class="project-entries row">
+
+
+        // <div class="col s12 m4">
+        //   <div class="card">
+        //     <div class="card-image waves-effect waves-block waves-light">
+      //         <img class="activator" src="img/projects/map.png" alt="Map Project Image">
+      //       </div>
+            // <div class="card-content">
+            //   <span class="card-title activator grey-text text-darken-4">Map</span>
+            // </div>
+            // <div class="card-action">
+            //   <a class="light-blue-text activator" href="#!">Info</a>
+      //         <a class="light-blue-text" href="http://geosynchronous.us/RoundRiver/">Demo</a>
+      //         <a class="light-blue-text" href="https://github.com/Geosynchronous/P7-Neighborhood-Map">Code</a>
+      //       </div>
+            // <div class="card-reveal">
+            //   <span class="card-title grey-text text-darken-4">Map<i class="material-icons right">close</i></span>
+      //         <p class="info-code-txt">HTML, CSS, JAVASCRIPT DESIGN PATTERNS, DOM, AJAX, GOOGLE MAPS API, OPEN WEATHER MAP API, MVVM, KNOCKOUT, JQUERY</p>
+      //         <p>The "Neighborhood Map Project" is the capstone project for the Udacity FEND Nanodegree course.  In addition,this project has real world application. It is a prototype for Outreach Education at ROUND RIVER CONSERVATION, which is a NGO Non-Profit.</p>
+      //         <p>The purpose of this Map App is to provide live data to update geolocations information windows on a map.  Selecting a marker on the map or a listed item on the options box will open an information window on the map.  The open window renders an image for that location, and real time weather data.  The markers and list locations can be filtered by selecting various buttons for that purpose. The info link on the info window links to the specific Round River website page for that location.  The weather icon links to a worldwide weather map, that can be used to access more detailed weather reports.</p>
+      //         <p>Third party APIs were handled with AJAX to provide real time data. API loading error messages are invoked when a load failure occurs. Google Map API provides the map and mapping functionalities, and Open Weather Map API provides real time weather data for specific locations.</p>
+      //         <p>The KNOCKOUT framework was used to make the UI and MVVM code model optimal.  For instance, the listed locations and marker locations highlight simultaneously when a user hovers the cursor over them.  Typically this is a tricky thing to code for, but with Knockout it is much easier to do, with a lot less code.  JQUERY is needed by KNOCKOUT. All code the DOM updating was done using KNOCKOUT, though JQUERY could have provided some of that functionality as well.</p>
+      //         <p>The MVVM model paragdigm was used to serperate concerns of model data,  user view, and user control. The options box and google map code were also seperated concerns as google maps itself does not work with KNOCKOUT.</p>
+      //         <p>The design is responsive for desktop, tablet and phone hardware platforms. Using different platforms to view this app, and changing browser window width will reveal the responsiveness of this design.</p>
+        //     </div>
+        //   </div>
+        // </div>
+
+
+
+// //  HTML styled content elements
+
+// var HTMLprojectsImage = '<img class="activator" src="%image%" alt="Map Project Image">',
+//     HTMLprojectsTitle = '<span class="card-title activator grey-text text-darken-4">%title%</span>',
+//     HTMLprojectsDemo = '<a class="light-blue-text" href="%demo%">Demo</a>',
+//     HTMLprojectsCode = '<a class="light-blue-text" href="%code%">Code</a>',
+//     HTMLprojectsList = '<p class="info-code-txt">%list%</p>',
+//     HTMLprojectsDescription = '<p>%description%</p>';
+
+// var HTMLprojectsCardReveal = '<div class="card-reveal">' +
+//                                 '<span class="card-title grey-text text-darken-4">%title%<i class="material-icons right">close</i></span>';
+
+
+
+
+// // Encapsulated Data Functions
+// // Data Added to DOM (index.html)
+
+// projects.display = function() {
+
+//     var  len = skills.length;
+//     for (var i = 0; i < len; i++) {
+
+//         var formattedImage = HTMLprojectsImage.replace("%image%", projects[i].image),
+//             formattedTitle = HTMLprojectsTitle.replace("%title%", projects[i].title),
+//             formattedDemo = HTMLprojectsDemo.replace("%demo%", projects[i].demo),
+//             formattedCode = HTMLprojectsCode.replace("%code%", projects[i].code),
+//             formattedList = HTMLprojectsList.replace("%list%", projects[i].textInfoList),
+//             formattedDescription = HTMLprojectsDescription.replace("%description%", projects[i].textInfoDescription);
+
+//         // BUILD CARD
+//         // format and content
+//         var formattedCardReveal = HTMLprojectsCardReveal.replace("%title%", projects[i].title),
+//         var formattedProjectsEntry =
+//                 '<div class="col s12 m4">' +
+//                     '<div class="card">' +
+//                         '<div class="card-image waves-effect waves-block waves-light">' +
+//                             formattedImage +
+//                         '</div>' +
+//                         '<div class="card-content">' +
+//                             formattedTitle +
+//                         '</div>' +
+//                         '<div class="card-action">' +
+//                             '<a class="light-blue-text activator" href="#!">Info</a>' +;
+//         If(projects[i].demo === !('NONE')) {
+//             formattedProjectsEntry = formattedProjectsEntry.push(formattedDemo + '+');
+//         }
+//         If(projects[i].code === !('NONE')) {
+//             formattedProjectsEntry = formattedProjectsEntry.push(formattedCode + '+');
+//         }
+//         formattedProjectsEntry = formattedProjectsEntry.push('</div>' + formattedCardReveal + formattedList + '+');
+//         ForEach(projects.description) {
+//             formattedProjectsEntry = formattedProjectsEntry.push(formattedDescription + '+');
+//         }
+//         formattedProjectsEntry = formattedProjectsEntry.push('</div></div></div>');
+
+//         $(".projects-entries")
+//         .append(formattedProjectsEntry);
+//     }
+// }
+
+
+
 
 //
 // SKILLS

@@ -198,10 +198,10 @@ projects.display = function() {
     for (var i = 0; i < len; i++) {
             formattedProjectsEntry = formattedProjectsEntry.push('+' + formattedDescription);
         }
-        // formattedProjectsEntry = formattedProjectsEntry.push(''+' + </div></div></div>');
+    formattedProjectsEntry = formattedProjectsEntry.push(''+' + </div></div></div>');
 
-        // $(".projects-entries")
-        // .append(formattedProjectsEntry);
+    $(".projects-entries")
+    .append(formattedProjectsEntry);
     }
 }
 

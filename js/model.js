@@ -160,8 +160,10 @@ var HTMLprojectsCardReveal = '<div class="card-reveal">' +
 
 projects.display = function() {
 
-    var  len = skills.length;
-    for (var i = 0; i < len; i++) {
+    var  len1 = skills.length;
+    for (var i = 0; i < len1; i++) {
+
+        console.log(len1);
 
         var formattedImage = HTMLprojectsImage.replace("%image%", projects[i].image),
             formattedTitle = HTMLprojectsTitle.replace("%title%", projects[i].title),
@@ -194,11 +196,11 @@ projects.display = function() {
 
 
 
-        var len = projects[i].textInfoDescription.length,
+        var len2 = projects[i].textInfoDescription.length,
             formattedDescription;
-        console.log(len);
+        console.log(len2);
 
-        for (var j = 0; j < len; j++) {
+        for (var j = 0; j < len2; j++) {
                 formattedDescription = HTMLprojectsDescription.replace("%description%", projects[i].textInfoDescription[j]);
                 formattedProjectsEntry = formattedProjectsEntry.concat('+' + formattedDescription);
             }

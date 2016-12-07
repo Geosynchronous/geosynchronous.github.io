@@ -191,7 +191,11 @@ projects.display = function() {
             formattedProjectsEntry = formattedProjectsEntry.push('+' + formattedCode);
         }
         formattedProjectsEntry = formattedProjectsEntry.push(''+' + </div>' + formattedCardReveal + formattedList);
-        ForEach(projects.description) {
+
+
+
+    var  len = porjects.textInfoDescription.length;
+    for (var i = 0; i < len; i++) {
             formattedProjectsEntry = formattedProjectsEntry.push('+' + formattedDescription);
         }
         // formattedProjectsEntry = formattedProjectsEntry.push(''+' + </div></div></div>');

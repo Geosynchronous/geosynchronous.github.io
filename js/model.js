@@ -173,7 +173,7 @@ projects.display = function() {
         // BUILD CARD
         // format and content
         var formattedCardReveal = HTMLprojectsCardReveal.replace("%title%", projects[i].title),
-        var formattedProjectsEntry =
+            formattedProjectsEntry =
                 '<div class="col s12 m4">' +
                     '<div class="card">' +
                         '<div class="card-image waves-effect waves-block waves-light">' +
@@ -183,18 +183,18 @@ projects.display = function() {
                             formattedTitle +
                         '</div>' +
                         '<div class="card-action">' +
-                            '<a class="light-blue-text activator" href="#!">Info</a>' +;
+                            '<a class="light-blue-text activator" href="#!">Info</a>';
         // If(projects[i].demo === !('NONE')) {
-        //     formattedProjectsEntry = formattedProjectsEntry.push(formattedDemo + '+');
+        //     formattedProjectsEntry = formattedProjectsEntry.push('+' + formattedDemo);
         // }
         // If(projects[i].code === !('NONE')) {
-        //     formattedProjectsEntry = formattedProjectsEntry.push(formattedCode + '+');
+        //     formattedProjectsEntry = formattedProjectsEntry.push('+' + formattedCode);
         // }
-        // formattedProjectsEntry = formattedProjectsEntry.push('</div>' + formattedCardReveal + formattedList + '+');
+        // formattedProjectsEntry = formattedProjectsEntry.push(''+' + </div>' + formattedCardReveal + formattedList);
         // ForEach(projects.description) {
-        //     formattedProjectsEntry = formattedProjectsEntry.push(formattedDescription + '+');
+        //     formattedProjectsEntry = formattedProjectsEntry.push('+' + formattedDescription);
         // }
-        // formattedProjectsEntry = formattedProjectsEntry.push('</div></div></div>');
+        // formattedProjectsEntry = formattedProjectsEntry.push(''+' + </div></div></div>');
 
         // $(".projects-entries")
         // .append(formattedProjectsEntry);

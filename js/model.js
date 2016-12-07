@@ -140,17 +140,17 @@ var projects = [{
 
 
 
-// //  HTML styled content elements
+//  HTML styled content elements
 
-// var HTMLprojectsImage = '<img class="activator" src="%image%" alt="Map Project Image">',
-//     HTMLprojectsTitle = '<span class="card-title activator grey-text text-darken-4">%title%</span>',
-//     HTMLprojectsDemo = '<a class="light-blue-text" href="%demo%">Demo</a>',
-//     HTMLprojectsCode = '<a class="light-blue-text" href="%code%">Code</a>',
-//     HTMLprojectsList = '<p class="info-code-txt">%list%</p>',
-//     HTMLprojectsDescription = '<p>%description%</p>';
+var HTMLprojectsImage = '<img class="activator" src="%image%" alt="Map Project Image">',
+    HTMLprojectsTitle = '<span class="card-title activator grey-text text-darken-4">%title%</span>',
+    HTMLprojectsDemo = '<a class="light-blue-text" href="%demo%">Demo</a>',
+    HTMLprojectsCode = '<a class="light-blue-text" href="%code%">Code</a>',
+    HTMLprojectsList = '<p class="info-code-txt">%list%</p>',
+    HTMLprojectsDescription = '<p>%description%</p>';
 
-// var HTMLprojectsCardReveal = '<div class="card-reveal">' +
-//                                 '<span class="card-title grey-text text-darken-4">%title%<i class="material-icons right">close</i></span>';
+var HTMLprojectsCardReveal = '<div class="card-reveal">' +
+                                '<span class="card-title grey-text text-darken-4">%title%<i class="material-icons right">close</i></span>';
 
 
 

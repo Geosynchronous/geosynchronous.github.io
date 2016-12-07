@@ -185,20 +185,20 @@ projects.display = function() {
                         '<div class="card-action">' +
                             '<a class="light-blue-text activator" href="#!">Info</a>';
         if (projects[i].demo === !('NONE')) {
-            formattedProjectsEntry = formattedProjectsEntry.push('+' + formattedDemo);
+            formattedProjectsEntry = formattedProjectsEntry.concat('+' + formattedDemo);
         }
         if (projects[i].code === !('NONE')) {
-            formattedProjectsEntry = formattedProjectsEntry.push('+' + formattedCode);
+            formattedProjectsEntry = formattedProjectsEntry.concat('+' + formattedCode);
         }
-        formattedProjectsEntry = formattedProjectsEntry.push(''+' + </div>' + formattedCardReveal + formattedList);
+        formattedProjectsEntry = formattedProjectsEntry.concat(''+' + </div>' + formattedCardReveal + formattedList);
 
 
 
-    var  len = porjects.textInfoDescription.length;
-    for (var i = 0; i < len; i++) {
-            formattedProjectsEntry = formattedProjectsEntry.push('+' + formattedDescription);
+    var  len = projects[i].textInfoDescription.length;
+    for (var j = 0; j < len; j++) {
+            formattedProjectsEntry = formattedProjectsEntry.concat('+' + formattedDescription);
         }
-    formattedProjectsEntry = formattedProjectsEntry.push(''+' + </div></div></div>');
+    formattedProjectsEntry = formattedProjectsEntry.concat(''+' + </div></div></div>');
 
     $(".projects-entries")
     .append(formattedProjectsEntry);

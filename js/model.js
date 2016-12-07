@@ -167,8 +167,8 @@ projects.display = function() {
             formattedTitle = HTMLprojectsTitle.replace("%title%", projects[i].title),
             formattedDemo = HTMLprojectsDemo.replace("%demo%", projects[i].demo),
             formattedCode = HTMLprojectsCode.replace("%code%", projects[i].code),
-            formattedList = HTMLprojectsList.replace("%list%", projects[i].textInfoList),
-            formattedDescription = HTMLprojectsDescription.replace("%description%", projects[i].textInfoDescription);
+            formattedList = HTMLprojectsList.replace("%list%", projects[i].textInfoList);
+
 
         // BUILD CARD
         // format and content
@@ -194,15 +194,19 @@ projects.display = function() {
 
 
 
-    var  len = projects[i].textInfoDescription.length;
-    for (var j = 0; j < len; j++) {
-            formattedProjectsEntry = formattedProjectsEntry.concat('+' + formattedDescription);
-        }
-    formattedProjectsEntry = formattedProjectsEntry.concat(''+' + </div></div></div>');
-    console.log(formattedProjectsEntry);
+        var len = projects[i].textInfoDescription.length,
+            formattedDescription;
+        console.log(len);
 
-    $(".projects-entries")
-    .append(formattedProjectsEntry);
+        for (var j = 0; j < len; j++) {
+                formattedDescription = HTMLprojectsDescription.replace("%description%", projects[i].textInfoDescription[j]);
+                formattedProjectsEntry = formattedProjectsEntry.concat('+' + formattedDescription);
+            }
+        formattedProjectsEntry = formattedProjectsEntry.concat(''+' + </div></div></div>');
+        console.log(formattedProjectsEntry);
+
+        $(".projects-entries")
+        .append(formattedProjectsEntry);
     }
 }
 

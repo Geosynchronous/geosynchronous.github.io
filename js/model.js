@@ -170,20 +170,20 @@ projects.display = function() {
             formattedList = HTMLprojectsList.replace("%list%", projects[i].textInfoList),
             formattedDescription = HTMLprojectsDescription.replace("%description%", projects[i].textInfoDescription);
 
-        // // BUILD CARD
-        // // format and content
-        // var formattedCardReveal = HTMLprojectsCardReveal.replace("%title%", projects[i].title),
-        // var formattedProjectsEntry =
-        //         '<div class="col s12 m4">' +
-        //             '<div class="card">' +
-        //                 '<div class="card-image waves-effect waves-block waves-light">' +
-        //                     formattedImage +
-        //                 '</div>' +
-        //                 '<div class="card-content">' +
-        //                     formattedTitle +
-        //                 '</div>' +
-        //                 '<div class="card-action">' +
-        //                     '<a class="light-blue-text activator" href="#!">Info</a>' +;
+        // BUILD CARD
+        // format and content
+        var formattedCardReveal = HTMLprojectsCardReveal.replace("%title%", projects[i].title),
+        var formattedProjectsEntry =
+                '<div class="col s12 m4">' +
+                    '<div class="card">' +
+                        '<div class="card-image waves-effect waves-block waves-light">' +
+                            formattedImage +
+                        '</div>' +
+                        '<div class="card-content">' +
+                            formattedTitle +
+                        '</div>' +
+                        '<div class="card-action">' +
+                            '<a class="light-blue-text activator" href="#!">Info</a>' +;
         // If(projects[i].demo === !('NONE')) {
         //     formattedProjectsEntry = formattedProjectsEntry.push(formattedDemo + '+');
         // }

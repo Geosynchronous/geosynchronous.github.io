@@ -187,13 +187,13 @@ projects.display = function() {
         if (projects[i].demo === !('NONE')) {
             formattedProjectsEntry = formattedProjectsEntry.push('+' + formattedDemo);
         }
-        // if (projects[i].code === !('NONE')) {
-        //     formattedProjectsEntry = formattedProjectsEntry.push('+' + formattedCode);
-        // }
-        // formattedProjectsEntry = formattedProjectsEntry.push(''+' + </div>' + formattedCardReveal + formattedList);
-        // ForEach(projects.description) {
-        //     formattedProjectsEntry = formattedProjectsEntry.push('+' + formattedDescription);
-        // }
+        if (projects[i].code === !('NONE')) {
+            formattedProjectsEntry = formattedProjectsEntry.push('+' + formattedCode);
+        }
+        formattedProjectsEntry = formattedProjectsEntry.push(''+' + </div>' + formattedCardReveal + formattedList);
+        ForEach(projects.description) {
+            formattedProjectsEntry = formattedProjectsEntry.push('+' + formattedDescription);
+        }
         // formattedProjectsEntry = formattedProjectsEntry.push(''+' + </div></div></div>');
 
         // $(".projects-entries")

@@ -112,6 +112,8 @@ var projects = [{
 // SKILLS
 //
 
+// Data Objects
+
 var skills = [{
         title: 'HTML CSS JS',
         icon: 'flash_on',
@@ -127,7 +129,7 @@ var skills = [{
     },{
         title: 'Dev Tools',
         icon: 'build',
-        text: 'These tools really help me solve problems, manage tasks, and dig deep into the behaviour of the code.  To date I have used: <strong>Chrome Dev Tools, Google Analytics, Sublime Text Editor, CLI Terminal, Linters, Beautifiers, Minifiers, Graphic Compression, Validators, Jasmine Testing, Bower, GULP, Git, GitHub, NodeJS, NPM, and Bower.</strong>'
+        text: '<strong>Chrome Dev Tools, Google Analytics, Sublime Text Editor, CLI Terminal, Linters, Beautifiers, Minifiers, Graphic Compression, Validators, Jasmine Testing, Bower, GULP, Git, GitHub, NodeJS, NPM, and Bower.</strong>'
     },{
         title: 'Testing',
         icon: 'assignment_turned_in',
@@ -149,6 +151,36 @@ var skills = [{
         icon: 'account_circle',
         text: 'I love to learn. It is a continually ongoing process for me.  I just finished the <strong>Udacity FEND Nanodegree</strong>, and it was awesome.  Now I want to deepen some skills further from that course and move into the <strong>Fullstack Nanodegree</strong> to strengthen and extend my web dev skills.  My moonshot would be <strong>AI, Data Analysis, IOT, and Self Driving Car Nanodegrees</strong>, as it would leverage my <strong>Instrumentation Physics, Engineering, Biology, Research and Electronic Skills.</strong>'
     }];
+
+//  HTML styled content elements
+
+var HTMLskillsIcon = '<h2 class="center light-blue-text"><i class="material-icons">%icon%</i></h2>',
+    HTMLskillsTitle = '<h5 class="center">%title%</h5>',
+    HTMLskillsText = '<p class="light">%text%</p>';
+
+// Encapsulated Data Functions
+// Data Added to DOM (index.html)
+
+skills.display = function() {
+
+    var  len = skills.length;
+    for (var i = 0; i < len; i++) {
+
+    var formattedIcon = HTMLskillsIcon.replace("%icon%", skills[i].icon),
+        formattedTitle = HTMLskillsTitle.replace("%title%", skills[i].title),
+        formattedText = HTMLskillsText.replace("%text%", skills[i].text),
+        formattedSkillEntry =
+            '<div class="col s12 m4"><div class="icon-block">' +
+                formattedIcon +
+                formattedTitle +
+                formattedText +
+            '</div></div>';
+
+
+    $(".skills-entries")
+        .append(formattedSkillEntry);
+    }
+}
 
 
 
@@ -181,26 +213,26 @@ var HTMLbioPic = '<img src="%data%" class="bio-pic" alt="Bio Photo">',
 // Encapsulated Data Functions
 // Data Added to DOM (index.html)
 
-    bio.display = function() {
+bio.display = function() {
 
-        var formattedImage = HTMLbioPic.replace("%data%", bio.image),
-            formattedTitle1 = HTMLbioTitle.replace("%data%", bio.title1),
-            formattedTitle2 = HTMLbioTitle.replace("%data%", bio.title2),
-            formattedCertificate= HTMLbioCertified.replace("%data%", bio.certificate),
-            formattedName = HTMLbioName.replace("%data%", bio.name),
-            formattedDescription = HTMLbioDescription.replace("%data%", bio.description);
+    var formattedImage = HTMLbioPic.replace("%data%", bio.image),
+        formattedTitle1 = HTMLbioTitle.replace("%data%", bio.title1),
+        formattedTitle2 = HTMLbioTitle.replace("%data%", bio.title2),
+        formattedCertificate= HTMLbioCertified.replace("%data%", bio.certificate),
+        formattedName = HTMLbioName.replace("%data%", bio.name),
+        formattedDescription = HTMLbioDescription.replace("%data%", bio.description);
 
-        $(".bio-name")
-            .append(formattedName);
+    $(".bio-name")
+        .append(formattedName);
 
-        $(".bio-fig")
-            .append(formattedImage)
-            .append(formattedTitle1)
-            .append(formattedTitle2)
-            .append(formattedCertificate);
+    $(".bio-fig")
+        .append(formattedImage)
+        .append(formattedTitle1)
+        .append(formattedTitle2)
+        .append(formattedCertificate);
 
-        $(".bio-description")
-            .append(formattedDescription);
+    $(".bio-description")
+        .append(formattedDescription);
 
 }
 
@@ -261,22 +293,22 @@ var HTMLconnectPic = '<img src="%img%" alt="%title% Logo">',
 // Data Added to DOM (index.html)
 
 
-    connect.display = function() {
+connect.display = function() {
 
-        var  len = connect.length;
-        for (var i = 0; i < len; i++) {
+    var  len = connect.length;
+    for (var i = 0; i < len; i++) {
 
-            var formattedImage1 = HTMLconnectPic.replace("%img%", connect[i].image);
-            var formattedImage2 = formattedImage1.replace("%title%", connect[i].title);
+        var formattedImage1 = HTMLconnectPic.replace("%img%", connect[i].image);
+        var formattedImage2 = formattedImage1.replace("%title%", connect[i].title);
 
-            var formattedUrl1 = HTMLconnectUrl.replace("%url%", connect[i].url);
-            var formattedUrl2 = formattedUrl1.replace("%title%", connect[i].title);
+        var formattedUrl1 = HTMLconnectUrl.replace("%url%", connect[i].url);
+        var formattedUrl2 = formattedUrl1.replace("%title%", connect[i].title);
 
-            var formattedChip = '<li><div class="chip">' + formattedImage2 + formattedUrl2 + '</div></li>';
+        var formattedChip = '<li><div class="chip">' + formattedImage2 + formattedUrl2 + '</div></li>';
 
-            $(".connectChips")
-                .append(formattedChip);
-        }
+        $(".connectChips")
+            .append(formattedChip);
+    }
 }
 
 

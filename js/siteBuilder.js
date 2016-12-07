@@ -8,6 +8,8 @@
 // (MVVM Refactor led to this Code)
 
 // Populate Sections
+skills.display();
 bio.display();
 connect.display();
+
 

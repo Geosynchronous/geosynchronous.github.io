@@ -152,8 +152,6 @@ projects.display = function() {
                         '<div class="card-action">' +
                             '<a class="light-blue-text activator" href="#!">Info</a>';
 
-      console.log(projects[i].demo);
-
         if (projects[i].demo === undefined) {
         // Do Nothing;
         } else {

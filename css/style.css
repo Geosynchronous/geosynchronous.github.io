@@ -1,4 +1,6 @@
 /* Custom Stylesheet */
+
+
 /**
  * Use this file to override Materialize files so you can update
  * the core Materialize files in the future
@@ -7,12 +9,13 @@
  */
 
 .icon-block {
-  padding: 0 15px;
+    padding: 0 15px;
 }
 
 .icon-block .material-icons {
-	font-size: inherit;
+    font-size: inherit;
 }
+
 
 /*
 	Changes made by George Fischer to overide
@@ -20,37 +23,37 @@
 */
 
 h1 {
-  font-size: 2.2rem;
-  line-height: 110%;
-  margin: 1.1rem 0 0.68rem 0;
+    font-size: 2.2rem;
+    line-height: 110%;
+    margin: 1.1rem 0 0.68rem 0;
 }
 
 .bio-fig {
-	margin: 0;
+    margin: 0;
 }
 
 .bio-name-text {
-	margin: 0;
-	font-size: 22px;
+    margin: 0;
+    font-size: 22px;
 }
 
 .bio-pic {
-	width: 150px;
-	margin-top: 10px;
-	box-shadow: 2px 2px 5px black, 0 0 5px grey;
+    width: 150px;
+    margin-top: 10px;
+    box-shadow: 2px 2px 5px black, 0 0 5px grey;
 }
 
 .bio-pad {
-	padding-right: 20px;
-	font-size: 20px;
-	font-style: italic;
+    padding-right: 20px;
+    font-size: 20px;
+    font-style: italic;
 }
 
 .navbar-fixed {
-	top: 0;
-	position: fixed;
-	z-index: 1000;
-	box-shadow: 5px 5px 20px black,0 0 30px grey;
+    top: 0;
+    position: fixed;
+    z-index: 1000;
+    box-shadow: 5px 5px 20px black, 0 0 30px grey;
 }
 
 a.anchor {
@@ -61,62 +64,60 @@ a.anchor {
 }
 
 .section.pad-top {
-  	padding-top: 100px;
+    padding-top: 100px;
 }
 
 .card {
-	box-shadow: 2px 2px 5px black, 0 0 5px grey;
+    box-shadow: 2px 2px 5px black, 0 0 5px grey;
 }
 
 .chip {
-	box-shadow: 2px 2px 5px black, 0 0 5px grey;
+    box-shadow: 2px 2px 5px black, 0 0 5px grey;
 }
 
 .page-footer {
-	box-shadow: 5px 5px 20px black,0 0 30px grey;
+    box-shadow: 5px 5px 20px black, 0 0 30px grey;
 }
 
 .card .card-content {
-	padding: 5px 0 5px 0;
-	text-align: center;
+    padding: 5px 0 5px 0;
+    text-align: center;
 }
 
 .card .card-action {
-	padding: 5px 0 5px 20px;
-	text-align: center;
-	font-weight: bolder;
+    padding: 5px 0 5px 20px;
+    text-align: center;
+    font-weight: bolder;
 }
 
 .card-action a {
-	color: blue;
+    color: blue;
 }
 
 .info-code-txt {
-	font-size: 12px;
-	color: blue;
+    font-size: 12px;
+    color: blue;
 }
 
 .udacity-logo {
-	width: 100px;
+    width: 100px;
 }
 
 .section {
-	padding: 0;
+    padding: 0;
 }
 
 .skills-pad {
-	padding-top: 40px;
+    padding-top: 40px;
 }
 
-
 @media only screen and (max-width: 992px) {
-  .side-nav {
-      box-shadow: 0 0 20px black;
-      background-color: #29b6f6;
-  }
-  .side-nav a {
-  	color: white;
-  	font-size: 18px;
-  }
-
+    .side-nav {
+        box-shadow: 0 0 20px black;
+        background-color: #29b6f6;
+    }
+    .side-nav a {
+        color: white;
+        font-size: 18px;
+    }
 }

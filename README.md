@@ -8,6 +8,7 @@ Udacity FEND Certified Developer
 - Change Splash Page Layout
 
 ##Run the Splash Page
+![Screenshot New Splash Page](https://github.com/Geosynchronous/geosynchronous.github.io/blob/master/Docimages/map.png)
 - Click on the Link: http://geosynchronous.github.io/
 
 ##New Splash Page

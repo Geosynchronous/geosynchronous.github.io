@@ -63,7 +63,7 @@ var projects = [{
         	'The "Online Resume Project" in the Udacity FEND course focuses on the above listed coding topics.  The content of each contained in Bootstrap Collapseable Container.  Only one Container can be open at a time. The content of the resume is not complete, and still needs to be updated. It is a response design that works on desktop, tablet, and phones.  There is a lot about this design I like, and I will probably use a version of this for my professional profiles.'
        	]
    },{
-      	title: 'Website Optimization Project Image',
+      	title: 'Optimization',
         image: 'img/projects/optimize.png',
         demo: 'http://geosynchronous.github.io/P6-Mobile-Portfolio/views/pizza.html',
         code: 'https://github.com/Geosynchronous/P6-Mobile-Portfolio',

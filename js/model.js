@@ -82,7 +82,7 @@ var projects = [{
        	]
    },{
       	title: 'Tracker',
-        image: 'HTML,CSS, JS, BACKBONE, FIREBASE, MVVM, BOWER, GULP, GIT',
+        image: 'img/projects/tracker.png',
         demo: '#!',
         code: '#!',
         textInfoList: 'HTML, CSS, JS, BACKBONE, FIREBASE, MVVM, BOWER, GULP, GIT',
@@ -171,11 +171,11 @@ projects.display = function() {
             formattedCode = HTMLprojectsCode.replace("%code%", projects[i].code),
             formattedList = HTMLprojectsList.replace("%list%", projects[i].textInfoList);
 
-            console.log(formattedImage);
-            console.log(formattedTitle);
-            console.log(formattedDemo);
-            console.log(formattedCode);
-            console.log(formattedList);
+            // console.log(formattedImage);
+            // console.log(formattedTitle);
+            // console.log(formattedDemo);
+            // console.log(formattedCode);
+            // console.log(formattedList);
 
 
         // BUILD CARD
@@ -193,25 +193,25 @@ projects.display = function() {
                         '<div class="card-action">' +
                             '<a class="light-blue-text activator" href="#!">Info</a>';
         // if (projects[i].demo = !('#!')) {
-            formattedProjectsEntry = formattedProjectsEntry.concat(+ formattedDemo);
-        // }
-        // if (projects[i].code = !('#!')) {
-            formattedProjectsEntry = formattedProjectsEntry.concat(+ formattedCode);
-        // }
-        formattedProjectsEntry = formattedProjectsEntry.concat( + '</div>' + formattedCardReveal + formattedList);
+        //     formattedProjectsEntry = formattedProjectsEntry.concat(+ formattedDemo);
+        // // }
+        // // if (projects[i].code = !('#!')) {
+        //     formattedProjectsEntry = formattedProjectsEntry.concat(+ formattedCode);
+        // // }
+        // formattedProjectsEntry = formattedProjectsEntry.concat( + '</div>' + formattedCardReveal + formattedList);
 
 
 
-        var len2 = projects[i].textInfoDescription.length,
-            formattedDescription;
-        // console.log(len2);
+        // // var len2 = projects[i].textInfoDescription.length,
+        // //     formattedDescription;
+        // // // console.log(len2);
 
-        for (var j = 0; j < len2; j++) {
-                formattedDescription = HTMLprojectsDescription.replace("%description%", projects[i].textInfoDescription[j]);
-                formattedProjectsEntry = formattedProjectsEntry.concat(+ formattedDescription);
-                formattedProjectsEntry = formattedProjectsEntry.concat(+ '</div></div></div>');
-                // console.log(formattedProjectsEntry);
-            }
+        // // for (var j = 0; j < len2; j++) {
+        // //         formattedDescription = HTMLprojectsDescription.replace("%description%", projects[i].textInfoDescription[j]);
+        // //         formattedProjectsEntry = formattedProjectsEntry.concat(+ formattedDescription);
+        // //         formattedProjectsEntry = formattedProjectsEntry.concat(+ '</div></div></div>');
+        // //         console.log(formattedProjectsEntry);
+        //     }
             $(".projects-entries")
                 .append(formattedProjectsEntry);
     }

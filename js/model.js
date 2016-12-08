@@ -193,11 +193,11 @@ projects.display = function() {
                         '<div class="card-action">' +
                             '<a class="light-blue-text activator" href="#!">Info</a>';
         // if (projects[i].demo = !('#!')) {
-        //     formattedProjectsEntry = formattedProjectsEntry.concat(+ formattedDemo);
-        // // }
-        // // if (projects[i].code = !('#!')) {
-        //     formattedProjectsEntry = formattedProjectsEntry.concat(+ formattedCode);
-        // // }
+            formattedProjectsEntry = formattedProjectsEntry.concat(formattedDemo);
+        // }
+        // if (projects[i].code = !('#!')) {
+            formattedProjectsEntry = formattedProjectsEntry.concat(formattedCode);
+        // }
         // formattedProjectsEntry = formattedProjectsEntry.concat( + '</div>' + formattedCardReveal + formattedList);
 
 

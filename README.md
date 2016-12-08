@@ -3,7 +3,18 @@ by George Fischer
 Udacity FEND Certified Developer
 
 ##Content
+- Run the Splash Page
+- New Splash Page
 - Change Splash Page Layout
+
+##Run the Splash Page
+- Click on the Link: http://geosynchronous.github.io/
+
+##New Splash Page
+This page Demos my Udacity Projects, all of which reside in my github repository.  The splash page makes available live DEMOS, INFO, and CODE links about each project.  My Skills, Bio, and Connect contacts are all referenced on this page as well. The site is responsive to desktop, tablet and phone platforms.
+
+Materialize Framework Template was used to start the principal layout design features, that evolved into well populated site, that was optimized into MVVM design.
+
 
 ##Change Splash Page Layout
 **Intro**

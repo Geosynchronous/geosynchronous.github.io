@@ -109,36 +109,6 @@ var projects = [{
        	]
 }];
 
-      // <div class="project-entries row">
-
-
-        // <div class="col s12 m4">
-        //   <div class="card">
-        //     <div class="card-image waves-effect waves-block waves-light">
-      //         <img class="activator" src="img/projects/map.png" alt="Map Project Image">
-      //       </div>
-            // <div class="card-content">
-            //   <span class="card-title activator grey-text text-darken-4">Map</span>
-            // </div>
-            // <div class="card-action">
-            //   <a class="light-blue-text activator" href="#!">Info</a>
-      //         <a class="light-blue-text" href="http://geosynchronous.us/RoundRiver/">Demo</a>
-      //         <a class="light-blue-text" href="https://github.com/Geosynchronous/P7-Neighborhood-Map">Code</a>
-      //       </div>
-            // <div class="card-reveal">
-            //   <span class="card-title grey-text text-darken-4">Map<i class="material-icons right">close</i></span>
-      //         <p class="info-code-txt">HTML, CSS, JAVASCRIPT DESIGN PATTERNS, DOM, AJAX, GOOGLE MAPS API, OPEN WEATHER MAP API, MVVM, KNOCKOUT, JQUERY</p>
-      //         <p>The "Neighborhood Map Project" is the capstone project for the Udacity FEND Nanodegree course.  In addition,this project has real world application. It is a prototype for Outreach Education at ROUND RIVER CONSERVATION, which is a NGO Non-Profit.</p>
-      //         <p>The purpose of this Map App is to provide live data to update geolocations information windows on a map.  Selecting a marker on the map or a listed item on the options box will open an information window on the map.  The open window renders an image for that location, and real time weather data.  The markers and list locations can be filtered by selecting various buttons for that purpose. The info link on the info window links to the specific Round River website page for that location.  The weather icon links to a worldwide weather map, that can be used to access more detailed weather reports.</p>
-      //         <p>Third party APIs were handled with AJAX to provide real time data. API loading error messages are invoked when a load failure occurs. Google Map API provides the map and mapping functionalities, and Open Weather Map API provides real time weather data for specific locations.</p>
-      //         <p>The KNOCKOUT framework was used to make the UI and MVVM code model optimal.  For instance, the listed locations and marker locations highlight simultaneously when a user hovers the cursor over them.  Typically this is a tricky thing to code for, but with Knockout it is much easier to do, with a lot less code.  JQUERY is needed by KNOCKOUT. All code the DOM updating was done using KNOCKOUT, though JQUERY could have provided some of that functionality as well.</p>
-      //         <p>The MVVM model paragdigm was used to serperate concerns of model data,  user view, and user control. The options box and google map code were also seperated concerns as google maps itself does not work with KNOCKOUT.</p>
-      //         <p>The design is responsive for desktop, tablet and phone hardware platforms. Using different platforms to view this app, and changing browser window width will reveal the responsiveness of this design.</p>
-        //     </div>
-        //   </div>
-        // </div>
-
-
 
 //  HTML styled content elements
 
@@ -153,8 +123,6 @@ var HTMLprojectsCardReveal = '<div class="card-reveal">' +
                                 '<span class="card-title grey-text text-darken-4">%title%<i class="material-icons right">close</i></span>';
 
 
-
-
 // Encapsulated Data Functions
 // Data Added to DOM (index.html)
 
@@ -163,20 +131,11 @@ projects.display = function() {
     var  len1 = skills.length;
     for (var i = 0; i < len1; i++) {
 
-        // console.log(len1);
-
         var formattedImage = HTMLprojectsImage.replace("%image%", projects[i].image),
             formattedTitle = HTMLprojectsTitle.replace("%title%", projects[i].title),
             formattedDemo = HTMLprojectsDemo.replace("%demo%", projects[i].demo),
             formattedCode = HTMLprojectsCode.replace("%code%", projects[i].code),
             formattedList = HTMLprojectsList.replace("%list%", projects[i].textInfoList);
-
-            // console.log(formattedImage);
-            // console.log(formattedTitle);
-            // console.log(formattedDemo);
-            // console.log(formattedCode);
-            // console.log(formattedList);
-
 
         // BUILD CARD
         // format and content
@@ -193,25 +152,24 @@ projects.display = function() {
                         '<div class="card-action">' +
                             '<a class="light-blue-text activator" href="#!">Info</a>';
         // if (projects[i].demo = !('#!')) {
-            formattedProjectsEntry = formattedProjectsEntry.concat(formattedDemo);
+        formattedProjectsEntry = formattedProjectsEntry.concat(formattedDemo);
         // }
         // if (projects[i].code = !('#!')) {
-            formattedProjectsEntry = formattedProjectsEntry.concat(formattedCode);
+        formattedProjectsEntry = formattedProjectsEntry.concat(formattedCode);
         // }
         formattedProjectsEntry = formattedProjectsEntry.concat('</div>' + formattedCardReveal + formattedList);
 
 
 
-        // // var len2 = projects[i].textInfoDescription.length,
-        // //     formattedDescription;
-        // // // console.log(len2);
+        var len2 = projects[i].textInfoDescription.length,
+            formattedDescription;
 
-        // // for (var j = 0; j < len2; j++) {
-        // //         formattedDescription = HTMLprojectsDescription.replace("%description%", projects[i].textInfoDescription[j]);
-        // //         formattedProjectsEntry = formattedProjectsEntry.concat(+ formattedDescription);
-        // //         formattedProjectsEntry = formattedProjectsEntry.concat(+ '</div></div></div>');
-        // //         console.log(formattedProjectsEntry);
-        //     }
+            for (var j = 0; j < len2; j++) {
+                    formattedDescription = HTMLprojectsDescription.replace("%description%", projects[i].textInfoDescription[j]);
+                    formattedProjectsEntry = formattedProjectsEntry.concat(formattedDescription);
+            }
+
+            formattedProjectsEntry = formattedProjectsEntry.concat('</div></div></div>');
             $(".projects-entries")
                 .append(formattedProjectsEntry);
     }
@@ -221,7 +179,6 @@ projects.display = function() {
     $(".projects-entries")
     .append(formattedProjectsEntryFinalized);
 }
-
 
 
 

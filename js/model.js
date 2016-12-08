@@ -187,12 +187,12 @@ projects.display = function() {
                         '<div class="card-action">' +
                             '<a class="light-blue-text activator" href="#!">Info</a>';
         if (projects[i].demo === !('NONE')) {
-            formattedProjectsEntry = formattedProjectsEntry.concat('+' + formattedDemo);
+            formattedProjectsEntry = formattedProjectsEntry.concat(+ formattedDemo);
         }
         if (projects[i].code === !('NONE')) {
-            formattedProjectsEntry = formattedProjectsEntry.concat('+' + formattedCode);
+            formattedProjectsEntry = formattedProjectsEntry.concat(+ formattedCode);
         }
-        formattedProjectsEntry = formattedProjectsEntry.concat(''+' + </div>' + formattedCardReveal + formattedList);
+        formattedProjectsEntry = formattedProjectsEntry.concat( + '</div>' + formattedCardReveal + formattedList);
 
 
 
@@ -202,15 +202,15 @@ projects.display = function() {
 
         for (var j = 0; j < len2; j++) {
                 formattedDescription = HTMLprojectsDescription.replace("%description%", projects[i].textInfoDescription[j]);
-                formattedProjectsEntry = formattedProjectsEntry.concat('+' + formattedDescription);
-                formattedProjectsEntry = formattedProjectsEntry.concat('+' + '</div></div></div>');
+                formattedProjectsEntry = formattedProjectsEntry.concat(+ formattedDescription);
+                formattedProjectsEntry = formattedProjectsEntry.concat(+ '</div></div></div>');
                 console.log(formattedProjectsEntry);
                 $(".projects-entries")
                     .append(formattedProjectsEntry);
             }
     }
 
-    var formattedProjectsEntryFinalized = formattedProjectsEntry.concat('+' + '</div></div></div>');
+    var formattedProjectsEntryFinalized = formattedProjectsEntry.concat(+ '</div></div></div>');
 
     $(".projects-entries")
     .append(formattedProjectsEntryFinalized);

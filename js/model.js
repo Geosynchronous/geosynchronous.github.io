@@ -22,7 +22,7 @@
 var projects = [{
         title: 'Map',
         image: 'img/projects/map.png',
-        demo: 'href="http://geosynchronous.us/RoundRiver/',
+        demo: 'http://geosynchronous.us/RoundRiver/',
         code: 'https://github.com/Geosynchronous/P7-Neighborhood-Map',
         textInfoList: 'HTML, CSS, JAVASCRIPT DESIGN PATTERNS, DOM, AJAX, GOOGLE MAPS API, OPEN WEATHER MAP API, MVVM, KNOCKOUT, JQUERY',
         textInfoDescription: [
@@ -151,9 +151,12 @@ projects.display = function() {
                         '</div>' +
                         '<div class="card-action">' +
                             '<a class="light-blue-text activator" href="#!">Info</a>';
-        // if (projects[i].demo = !('#!')) {
+
+      console.log(projects[i].demo);
+
+        if (projects[i].demo = !('#!')) {
         formattedProjectsEntry = formattedProjectsEntry.concat(formattedDemo);
-        // }
+        }
         // if (projects[i].code = !('#!')) {
         formattedProjectsEntry = formattedProjectsEntry.concat(formattedCode);
         // }

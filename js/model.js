@@ -83,8 +83,8 @@ var projects = [{
    },{
       	title: 'Tracker',
         image: 'img/projects/tracker.png',
-        demo: '#!',
-        code: '#!',
+        demo: undefined,
+        code: undefined,
         textInfoList: 'HTML, CSS, JS, BACKBONE, FIREBASE, MVVM, BOWER, GULP, GIT',
         textInfoDescription: [
         	'I plan on doing the optional Health Tracker Project to learn about BACKBONE and FIREBASE frameworks.I also plan on strenghting my skills, with BOWER, GULP, and GIT.'
@@ -92,7 +92,7 @@ var projects = [{
    },{
       	title: 'Splash',
         image: 'img/projects/splash.png',
-        demo: '#!',
+        demo: undefined,
         code: 'https://github.com/Geosynchronous/geosynchronous.github.io',
         textInfoList: 'HTML,CSS, JS, SPA, MATERIALIZE FRAMEWORK, MVVM',
         textInfoDescription: [
@@ -101,7 +101,7 @@ var projects = [{
    },{
       	title: 'Repository',
         image: 'img/projects/repository.png',
-        demo: '#!',
+        demo: undefined,
         code: 'https://github.com/Geosynchronous',
         textInfoList: 'GIT, GITHUB',
         textInfoDescription: [
@@ -154,12 +154,17 @@ projects.display = function() {
 
       console.log(projects[i].demo);
 
-        if (projects[i].demo = !('#!')) {
+        if (projects[i].demo === undefined) {
+        // Do Nothing;
+        } else {
         formattedProjectsEntry = formattedProjectsEntry.concat(formattedDemo);
         }
-        // if (projects[i].code = !('#!')) {
+        if (projects[i].code === undefined) {
+        // Do Nothing;
+        } else {
         formattedProjectsEntry = formattedProjectsEntry.concat(formattedCode);
-        // }
+        }
+
         formattedProjectsEntry = formattedProjectsEntry.concat('</div>' + formattedCardReveal + formattedList);
 
 

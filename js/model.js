@@ -198,7 +198,7 @@ projects.display = function() {
         // if (projects[i].code = !('#!')) {
             formattedProjectsEntry = formattedProjectsEntry.concat(formattedCode);
         // }
-        // formattedProjectsEntry = formattedProjectsEntry.concat( + '</div>' + formattedCardReveal + formattedList);
+        formattedProjectsEntry = formattedProjectsEntry.concat('</div>' + formattedCardReveal + formattedList);
 
 
 

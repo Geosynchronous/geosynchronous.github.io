@@ -184,7 +184,7 @@ projects.display = function() {
 
     $(".projects-entries")
         .append(formattedProjectsEntryFinalized);
-}
+};
 
 
 
@@ -260,7 +260,7 @@ skills.display = function() {
         $(".skills-entries")
             .append(formattedSkillEntry);
     }
-}
+};
 
 
 
@@ -314,7 +314,7 @@ bio.display = function() {
     $(".bio-description")
         .append(formattedDescription);
 
-}
+};
 
 
 
@@ -389,4 +389,4 @@ connect.display = function() {
         $(".connectChips")
             .append(formattedChip);
     }
-}
+};

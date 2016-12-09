@@ -87,7 +87,7 @@ var projects = [{
     code: undefined,
     textInfoList: 'HTML, CSS, JS, BACKBONE, FIREBASE, MVVM, BOWER, GULP, GIT',
     textInfoDescription: [
-        'I plan on doing the optional Health Tracker Project to learn about BACKBONE and FIREBASE frameworks.I also plan on strenghting my skills, with BOWER, GULP, and GIT.'
+        'I plan on doing the optional Health Tracker Project to learn about BACKBONE and FIREBASE frameworks. I also plan on strenghting my skills, with BOWER, GULP, and GIT.'
     ]
 }, {
     title: 'Splash',
@@ -96,7 +96,7 @@ var projects = [{
     code: 'https://github.com/Geosynchronous/geosynchronous.github.io',
     textInfoList: 'HTML,CSS, JS, SPA, MATERIALIZE FRAMEWORK, MVVM',
     textInfoDescription: [
-        'This is my Splash Website Project. It is the Splash Page for my Github Repository, which introduces the User to an overview of my Web Projects and Skills. It is the webpage you are currently on.  It is a SINGLE PAGE APPLICATION (SPA)  I used the Materialize Framework on this project for the first time, and like how easy it is to develop my ideas with. I started with a simple template and refactored it to meet my needs. It is a responsive design that works well on desktop, tablet and mobile phones.'
+        'This is my Splash Website Project. It is the Splash Page for my Github Repository, which introduces the User to an overview of my Web Projects and Skills. It is the webpage you are currently on.  It is a SINGLE PAGE APPLICATION (SPA) I used the Materialize Framework on this project for the first time, and like how easy it is to develop my ideas with. I started with a simple template and refactored it to meet my needs. It is a responsive design that works well on desktop, tablet and mobile phones.'
     ]
 }, {
     title: 'Repository',

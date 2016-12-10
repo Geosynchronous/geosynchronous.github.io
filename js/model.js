@@ -213,7 +213,7 @@ var skills = [{
 }, {
     title: 'Testing',
     icon: 'assignment_turned_in',
-    text: 'Test Driven Design (TDD) and Behaviour Driven Design (BDD) I have recently implemeted with the FeedReader Testing project using <strong>JasmineJS Testing Framework.</strong> It really helps in the process of writing better code.'
+    text: 'Test Driven Design (TDD) and Behaviour Driven Design (BDD) are testing paradigms that I have recently implemeted with the FeedReader Testing project using <strong>JasmineJS Testing Framework.</strong> It really helps in the process of writing better code.'
 }, {
     title: 'Communities',
     icon: 'groups',

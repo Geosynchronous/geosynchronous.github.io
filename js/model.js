@@ -197,7 +197,7 @@ projects.display = function() {
 var skills = [{
     title: 'HTML CSS JS',
     icon: 'flash_on',
-    text: 'This coding ecosystem forms the foundation for web dev, and unlocks access to all other development possibilities.  I am comfortable using these languages, and confident when searching out answers that I need.  I look forward to a continual deeping of my knowledge here.'
+    text: 'This coding ecosystem forms the foundation for web develpoment.  I am comfortable using these languages, and confident when searching out answers that I need.  I look forward to a continual deeping of my knowledge here.'
 }, {
     title: 'Frameworks',
     icon: 'account_balance',

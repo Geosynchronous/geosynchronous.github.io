@@ -205,7 +205,7 @@ var skills = [{
 }, {
     title: 'APIs',
     icon: 'settings',
-    text: 'Application Program Interfaces allow websites to bring in data in all types of forms from server providers. This allows websites to be dynamic with incoming information. To date I have used these APIs: <strong>Google Maps, Google Search, Google Places, Open Weather Map, Wikipedia, and The New York Times.</strong>'
+    text: 'Application Program Interfaces allow websites to bring in data in all types of forms from server providers to web pages. This allows websites to be dynamic with incoming information. To date I have used these APIs: <strong>Google Maps, Google Search, Google Places, Open Weather Map, Wikipedia, and The New York Times.</strong>'
 }, {
     title: 'Dev Tools',
     icon: 'build',
